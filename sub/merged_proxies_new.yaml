@@ -1,31 +1,29 @@
-mixed-port: 7890
+port: 7890
 allow-lan: true
-bind-address: '*'
 mode: rule
 log-level: info
-external-controller: 127.0.0.1:9090
+unified-delay: true
+global-client-fingerprint: chrome
 dns:
   enable: true
-  ipv6: false
-  default-nameserver:
-  - 223.5.5.5
-  - 119.29.29.29
+  listen: :53
+  ipv6: true
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  use-hosts: true
+  default-nameserver:
+  - 223.5.5.5
+  - 8.8.8.8
   nameserver:
-  - https://doh.pub/dns-query
   - https://dns.alidns.com/dns-query
+  - https://doh.pub/dns-query
   fallback:
-  - https://doh.dns.sb/dns-query
-  - https://dns.cloudflare.com/dns-query
-  - https://dns.twnic.tw/dns-query
-  - tls://8.8.4.4:853
+  - https://1.0.0.1/dns-query
+  - tls://dns.google
   fallback-filter:
     geoip: true
+    geoip-code: CN
     ipcidr:
     - 240.0.0.0/4
-    - 0.0.0.0/32
 proxies:
 - name: None_None_vmess_01
   type: vmess
@@ -2388,7 +2386,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: None_None_vmess_1175
+  name: United States_San Francisco_vmess_1175
   network: ws
   port: '2052'
   server: cfcdn3.sanfencdn9.com
@@ -2740,184 +2738,460 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
 proxy-groups:
-- name: MarsTech|切换在下一项
+- name: 节点选择
   type: select
   proxies:
+  - 自动选择
   - DIRECT
-- name: 🚀 节点选择
-  type: select
-  proxies:
-  - ♻️ 自动选择
-  - 🧬 故障转移
-  - ⚖️ 均衡哈希
-  - 🎯 全球直连
-- name: ⚖️ 均衡哈希
-  type: load-balance
-  strategy: consistent-hashing
-  url: http://www.gstatic.com/generate_204
-  interval: 7200
-  tolerance: 100
-  proxies: null
-- name: ♻️ 自动选择
+  - None_None_vmess_01
+  - None_None_vmess_02
+  - Canada_Ottawa_vmess_03
+  - None_None_vmess_04
+  - United States_San Francisco_vmess_05
+  - United States_None_vmess_06
+  - None_None_vmess_07
+  - United States_San Francisco_vmess_08
+  - United States_None_vmess_09
+  - United States_None_vmess_010
+  - None_None_vmess_011
+  - None_None_vmess_012
+  - None_None_vmess_013
+  - None_None_vmess_014
+  - None_None_vmess_015
+  - None_None_vmess_016
+  - None_None_vmess_017
+  - None_None_vmess_018
+  - None_None_vmess_019
+  - None_None_vmess_020
+  - None_None_vmess_021
+  - None_None_vmess_022
+  - None_None_vmess_023
+  - None_None_vmess_024
+  - None_None_vmess_025
+  - None_None_vmess_026
+  - None_None_vmess_027
+  - None_None_vmess_028
+  - None_None_vmess_029
+  - None_None_vmess_030
+  - None_None_vmess_031
+  - None_None_vmess_032
+  - None_None_vmess_033
+  - None_None_vmess_034
+  - None_None_vmess_035
+  - None_None_vmess_036
+  - None_None_vmess_037
+  - None_None_vmess_038
+  - None_None_vmess_039
+  - None_None_vmess_040
+  - None_None_vmess_041
+  - None_None_vmess_042
+  - None_None_vmess_043
+  - None_None_vmess_044
+  - None_None_vmess_045
+  - None_None_vmess_046
+  - None_None_vmess_047
+  - None_None_vmess_048
+  - None_None_vmess_049
+  - None_None_vmess_050
+  - None_None_vmess_051
+  - None_None_vmess_052
+  - None_None_vmess_053
+  - None_None_vmess_054
+  - None_None_vmess_055
+  - None_None_vmess_056
+  - None_None_vmess_057
+  - None_None_vmess_058
+  - None_None_vmess_059
+  - None_None_vmess_060
+  - None_None_vmess_061
+  - None_None_vmess_11
+  - None_None_vmess_12
+  - Canada_Ottawa_vmess_13
+  - None_None_vmess_14
+  - United States_San Francisco_vmess_15
+  - United States_None_vmess_16
+  - None_None_vmess_17
+  - United States_San Francisco_vmess_18
+  - United States_None_vmess_19
+  - United States_None_vmess_110
+  - None_None_vmess_111
+  - None_None_vmess_112
+  - None_None_vmess_113
+  - None_None_vmess_114
+  - None_None_vmess_115
+  - None_None_vmess_116
+  - None_None_vmess_117
+  - None_None_vmess_118
+  - None_None_vmess_119
+  - None_None_vmess_120
+  - None_None_vmess_121
+  - None_None_vmess_122
+  - None_None_vmess_123
+  - None_None_vmess_124
+  - None_None_vmess_125
+  - None_None_vmess_126
+  - None_None_vmess_127
+  - None_None_vmess_128
+  - None_None_vmess_129
+  - None_None_vmess_130
+  - United States_None_vmess_131
+  - None_None_vmess_21
+  - Canada_Ottawa_vmess_22
+  - None_None_vmess_23
+  - None_None_vmess_24
+  - None_None_vmess_31
+  - Canada_Ottawa_vmess_32
+  - None_None_vmess_33
+  - None_None_vmess_34
+  - None_None_vmess_41
+  - Canada_Ottawa_vmess_42
+  - None_None_vmess_43
+  - None_None_vmess_44
+  - United States_None_ss_51
+  - United States_None_ss_61
+  - None_None_vmess_71
+  - Canada_Ottawa_vmess_72
+  - None_None_vmess_73
+  - None_None_vmess_74
+  - United States_None_ss_81
+  - United States_None_hysteria_91
+  - Singapore_Singapore_ss_111
+  - South Korea_Incheon_ss_112
+  - Singapore_Singapore_ss_113
+  - Singapore_Singapore_ss_114
+  - Singapore_Singapore_ss_115
+  - Singapore_Singapore_ss_116
+  - Singapore_Singapore_ss_117
+  - Singapore_Singapore_ss_118
+  - Singapore_Singapore_ss_119
+  - Singapore_Singapore_ss_1110
+  - Singapore_Singapore_ss_1111
+  - Singapore_Singapore_ss_1112
+  - Singapore_Singapore_ss_1113
+  - Singapore_Singapore_ss_1114
+  - Singapore_Singapore_ss_1115
+  - Singapore_Singapore_ss_1116
+  - Singapore_Singapore_ss_1117
+  - Singapore_Singapore_ss_1118
+  - Singapore_Singapore_ss_1119
+  - Singapore_Singapore_ss_1120
+  - Singapore_Singapore_ss_1121
+  - Singapore_Singapore_ss_1122
+  - Singapore_Singapore_ss_1123
+  - Singapore_Singapore_ss_1124
+  - Singapore_Singapore_ss_1125
+  - Singapore_Singapore_ssr_1126
+  - Singapore_Singapore_ssr_1127
+  - Singapore_Singapore_ssr_1128
+  - Singapore_Singapore_ssr_1129
+  - Singapore_Singapore_ssr_1130
+  - Singapore_Singapore_ssr_1131
+  - Japan_Tokyo_ssr_1132
+  - Singapore_Singapore_ssr_1133
+  - Singapore_Singapore_ssr_1134
+  - Singapore_Singapore_ssr_1135
+  - Singapore_Singapore_ssr_1136
+  - Singapore_Singapore_ssr_1137
+  - Singapore_Singapore_ssr_1138
+  - Singapore_Singapore_ssr_1139
+  - Japan_Tokyo_ss_1140
+  - Japan_Tokyo_ss_1141
+  - Japan_Tokyo_trojan_1142
+  - Russia_None_vmess_1143
+  - Sweden_None_vmess_1144
+  - Singapore_Singapore_ss_1145
+  - Singapore_Singapore_ssr_1146
+  - Singapore_Singapore_ssr_1147
+  - Singapore_Singapore_ssr_1148
+  - Singapore_Singapore_ssr_1149
+  - Singapore_Singapore_ssr_1150
+  - Singapore_Singapore_ssr_1151
+  - Singapore_Singapore_ssr_1152
+  - Singapore_Singapore_ssr_1153
+  - Singapore_Singapore_ssr_1154
+  - Singapore_Singapore_ssr_1155
+  - Singapore_Singapore_ssr_1156
+  - Singapore_Singapore_ssr_1157
+  - Singapore_Singapore_ssr_1158
+  - Singapore_Singapore_ssr_1159
+  - Singapore_Singapore_ssr_1160
+  - Singapore_Singapore_ssr_1161
+  - United States_None_ss_1162
+  - United States_Santa Clara_ss_1163
+  - United States_San Jose_vmess_1164
+  - United States_San Jose_vmess_1165
+  - United States_San Jose_vmess_1166
+  - Singapore_Singapore_vmess_1167
+  - Hong Kong_Hong Kong_ss_1168
+  - China_None_vmess_1169
+  - China_None_vmess_1170
+  - China_None_trojan_1171
+  - China_None_ss_1172
+  - China_None_trojan_1173
+  - China_None_trojan_1174
+  - United States_San Francisco_vmess_1175
+  - China_None_trojan_1176
+  - China_Haikou_vmess_1177
+  - China_None_trojan_1178
+  - Singapore_None_trojan_1179
+  - China_None_ss_1180
+  - China_Guangzhou_vmess_1181
+  - China_None_trojan_1182
+  - None_None_vmess_1183
+  - Singapore_Singapore_ss_1184
+  - China_None_ss_1185
+  - China_None_ss_1186
+  - Singapore_Singapore_ss_1187
+  - United States_Boardman_ss_1188
+  - China_None_vmess_1189
+  - China_None_vmess_1190
+  - China_Haikou_vmess_1191
+  - China_None_trojan_1192
+  - United Kingdom_None_trojan_1193
+  - South Korea_Eunpyeong-gu_trojan_1194
+  - South Korea_Eunpyeong-gu_trojan_1195
+  - South Korea_Eunpyeong-gu_trojan_1196
+  - The Netherlands_Meppel_ss_131
+  - Denmark_Copenhagen_ss_132
+  - United States_None_vmess_133
+  - China_None_trojan_134
+  - France_None_hy_0
+  - France_None_hy_1
+  - France_None_hy_2
+  - France_None_hy_3
+  - United States_None_hy2_0
+  - United States_None_hy2_1
+  - United States_None_hy2_2
+  - United States_None_hy2_3
+- name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
-  interval: 86400
-  tolerance: 100
-  proxies: null
-- name: 🧬 故障转移
-  type: fallback
-  url: http://www.gstatic.com/generate_204
-  interval: 7200
-  tolerance: 100
-  proxies: null
-- name: 🌍 国外媒体
-  type: select
+  interval: 300
+  tolerance: 50
   proxies:
-  - 🚀 节点选择
-  - ♻️ 自动选择
-  - 🎯 全球直连
-- name: 📲 电报信息
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - ♻️ 自动选择
-  - 🎯 全球直连
-- name: Ⓜ️ 微软服务
-  type: select
-  proxies:
-  - 🎯 全球直连
-  - 🚀 节点选择
-- name: 🍎 苹果服务
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - 🎯 全球直连
-- name: 📢 谷歌FCM
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - ♻️ 自动选择
-  - 🎯 全球直连
-- name: 🎯 全球直连
-  type: select
-  proxies:
-  - DIRECT
-- name: 🛑 全球拦截
-  type: select
-  proxies:
-  - REJECT
-  - DIRECT
-- name: 🍃 应用净化
-  type: select
-  proxies:
-  - REJECT
-  - DIRECT
-- name: 🐟 漏网之鱼
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - 🎯 全球直连
-  - ♻️ 自动选择
-rule-providers:
-  reject:
-    type: http
-    behavior: domain
-    url: https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt
-    path: ./ruleset/reject.yaml
-    interval: 86400
-  icloud:
-    type: http
-    behavior: domain
-    url: https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/icloud.txt
-    path: ./ruleset/icloud.yaml
-    interval: 86400
-  apple:
-    type: http
-    behavior: domain
-    url: https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt
-    path: ./ruleset/apple.yaml
-    interval: 86400
-  google:
-    type: http
-    behavior: domain
-    url: https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/google.txt
-    path: ./ruleset/google.yaml
-    interval: 86400
-  proxy:
-    type: http
-    behavior: domain
-    url: https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt
-    path: ./ruleset/proxy.yaml
-    interval: 86400
-  direct:
-    type: http
-    behavior: domain
-    url: https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt
-    path: ./ruleset/direct.yaml
-    interval: 86400
-  private:
-    type: http
-    behavior: domain
-    url: https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/private.txt
-    path: ./ruleset/private.yaml
-    interval: 86400
-  gfw:
-    type: http
-    behavior: domain
-    url: https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt
-    path: ./ruleset/gfw.yaml
-    interval: 86400
-  greatfire:
-    type: http
-    behavior: domain
-    url: https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/greatfire.txt
-    path: ./ruleset/greatfire.yaml
-    interval: 86400
-  tld-not-cn:
-    type: http
-    behavior: domain
-    url: https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/tld-not-cn.txt
-    path: ./ruleset/tld-not-cn.yaml
-    interval: 86400
-  telegramcidr:
-    type: http
-    behavior: ipcidr
-    url: https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/telegramcidr.txt
-    path: ./ruleset/telegramcidr.yaml
-    interval: 86400
-  cncidr:
-    type: http
-    behavior: ipcidr
-    url: https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt
-    path: ./ruleset/cncidr.yaml
-    interval: 86400
-  lancidr:
-    type: http
-    behavior: ipcidr
-    url: https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/lancidr.txt
-    path: ./ruleset/lancidr.yaml
-    interval: 86400
-  applications:
-    type: http
-    behavior: classical
-    url: https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/applications.txt
-    path: ./ruleset/applications.yaml
-    interval: 86400
+  - None_None_vmess_01
+  - None_None_vmess_02
+  - Canada_Ottawa_vmess_03
+  - None_None_vmess_04
+  - United States_San Francisco_vmess_05
+  - United States_None_vmess_06
+  - None_None_vmess_07
+  - United States_San Francisco_vmess_08
+  - United States_None_vmess_09
+  - United States_None_vmess_010
+  - None_None_vmess_011
+  - None_None_vmess_012
+  - None_None_vmess_013
+  - None_None_vmess_014
+  - None_None_vmess_015
+  - None_None_vmess_016
+  - None_None_vmess_017
+  - None_None_vmess_018
+  - None_None_vmess_019
+  - None_None_vmess_020
+  - None_None_vmess_021
+  - None_None_vmess_022
+  - None_None_vmess_023
+  - None_None_vmess_024
+  - None_None_vmess_025
+  - None_None_vmess_026
+  - None_None_vmess_027
+  - None_None_vmess_028
+  - None_None_vmess_029
+  - None_None_vmess_030
+  - None_None_vmess_031
+  - None_None_vmess_032
+  - None_None_vmess_033
+  - None_None_vmess_034
+  - None_None_vmess_035
+  - None_None_vmess_036
+  - None_None_vmess_037
+  - None_None_vmess_038
+  - None_None_vmess_039
+  - None_None_vmess_040
+  - None_None_vmess_041
+  - None_None_vmess_042
+  - None_None_vmess_043
+  - None_None_vmess_044
+  - None_None_vmess_045
+  - None_None_vmess_046
+  - None_None_vmess_047
+  - None_None_vmess_048
+  - None_None_vmess_049
+  - None_None_vmess_050
+  - None_None_vmess_051
+  - None_None_vmess_052
+  - None_None_vmess_053
+  - None_None_vmess_054
+  - None_None_vmess_055
+  - None_None_vmess_056
+  - None_None_vmess_057
+  - None_None_vmess_058
+  - None_None_vmess_059
+  - None_None_vmess_060
+  - None_None_vmess_061
+  - None_None_vmess_11
+  - None_None_vmess_12
+  - Canada_Ottawa_vmess_13
+  - None_None_vmess_14
+  - United States_San Francisco_vmess_15
+  - United States_None_vmess_16
+  - None_None_vmess_17
+  - United States_San Francisco_vmess_18
+  - United States_None_vmess_19
+  - United States_None_vmess_110
+  - None_None_vmess_111
+  - None_None_vmess_112
+  - None_None_vmess_113
+  - None_None_vmess_114
+  - None_None_vmess_115
+  - None_None_vmess_116
+  - None_None_vmess_117
+  - None_None_vmess_118
+  - None_None_vmess_119
+  - None_None_vmess_120
+  - None_None_vmess_121
+  - None_None_vmess_122
+  - None_None_vmess_123
+  - None_None_vmess_124
+  - None_None_vmess_125
+  - None_None_vmess_126
+  - None_None_vmess_127
+  - None_None_vmess_128
+  - None_None_vmess_129
+  - None_None_vmess_130
+  - United States_None_vmess_131
+  - None_None_vmess_21
+  - Canada_Ottawa_vmess_22
+  - None_None_vmess_23
+  - None_None_vmess_24
+  - None_None_vmess_31
+  - Canada_Ottawa_vmess_32
+  - None_None_vmess_33
+  - None_None_vmess_34
+  - None_None_vmess_41
+  - Canada_Ottawa_vmess_42
+  - None_None_vmess_43
+  - None_None_vmess_44
+  - United States_None_ss_51
+  - United States_None_ss_61
+  - None_None_vmess_71
+  - Canada_Ottawa_vmess_72
+  - None_None_vmess_73
+  - None_None_vmess_74
+  - United States_None_ss_81
+  - United States_None_hysteria_91
+  - Singapore_Singapore_ss_111
+  - South Korea_Incheon_ss_112
+  - Singapore_Singapore_ss_113
+  - Singapore_Singapore_ss_114
+  - Singapore_Singapore_ss_115
+  - Singapore_Singapore_ss_116
+  - Singapore_Singapore_ss_117
+  - Singapore_Singapore_ss_118
+  - Singapore_Singapore_ss_119
+  - Singapore_Singapore_ss_1110
+  - Singapore_Singapore_ss_1111
+  - Singapore_Singapore_ss_1112
+  - Singapore_Singapore_ss_1113
+  - Singapore_Singapore_ss_1114
+  - Singapore_Singapore_ss_1115
+  - Singapore_Singapore_ss_1116
+  - Singapore_Singapore_ss_1117
+  - Singapore_Singapore_ss_1118
+  - Singapore_Singapore_ss_1119
+  - Singapore_Singapore_ss_1120
+  - Singapore_Singapore_ss_1121
+  - Singapore_Singapore_ss_1122
+  - Singapore_Singapore_ss_1123
+  - Singapore_Singapore_ss_1124
+  - Singapore_Singapore_ss_1125
+  - Singapore_Singapore_ssr_1126
+  - Singapore_Singapore_ssr_1127
+  - Singapore_Singapore_ssr_1128
+  - Singapore_Singapore_ssr_1129
+  - Singapore_Singapore_ssr_1130
+  - Singapore_Singapore_ssr_1131
+  - Japan_Tokyo_ssr_1132
+  - Singapore_Singapore_ssr_1133
+  - Singapore_Singapore_ssr_1134
+  - Singapore_Singapore_ssr_1135
+  - Singapore_Singapore_ssr_1136
+  - Singapore_Singapore_ssr_1137
+  - Singapore_Singapore_ssr_1138
+  - Singapore_Singapore_ssr_1139
+  - Japan_Tokyo_ss_1140
+  - Japan_Tokyo_ss_1141
+  - Japan_Tokyo_trojan_1142
+  - Russia_None_vmess_1143
+  - Sweden_None_vmess_1144
+  - Singapore_Singapore_ss_1145
+  - Singapore_Singapore_ssr_1146
+  - Singapore_Singapore_ssr_1147
+  - Singapore_Singapore_ssr_1148
+  - Singapore_Singapore_ssr_1149
+  - Singapore_Singapore_ssr_1150
+  - Singapore_Singapore_ssr_1151
+  - Singapore_Singapore_ssr_1152
+  - Singapore_Singapore_ssr_1153
+  - Singapore_Singapore_ssr_1154
+  - Singapore_Singapore_ssr_1155
+  - Singapore_Singapore_ssr_1156
+  - Singapore_Singapore_ssr_1157
+  - Singapore_Singapore_ssr_1158
+  - Singapore_Singapore_ssr_1159
+  - Singapore_Singapore_ssr_1160
+  - Singapore_Singapore_ssr_1161
+  - United States_None_ss_1162
+  - United States_Santa Clara_ss_1163
+  - United States_San Jose_vmess_1164
+  - United States_San Jose_vmess_1165
+  - United States_San Jose_vmess_1166
+  - Singapore_Singapore_vmess_1167
+  - Hong Kong_Hong Kong_ss_1168
+  - China_None_vmess_1169
+  - China_None_vmess_1170
+  - China_None_trojan_1171
+  - China_None_ss_1172
+  - China_None_trojan_1173
+  - China_None_trojan_1174
+  - United States_San Francisco_vmess_1175
+  - China_None_trojan_1176
+  - China_Haikou_vmess_1177
+  - China_None_trojan_1178
+  - Singapore_None_trojan_1179
+  - China_None_ss_1180
+  - China_Guangzhou_vmess_1181
+  - China_None_trojan_1182
+  - None_None_vmess_1183
+  - Singapore_Singapore_ss_1184
+  - China_None_ss_1185
+  - China_None_ss_1186
+  - Singapore_Singapore_ss_1187
+  - United States_Boardman_ss_1188
+  - China_None_vmess_1189
+  - China_None_vmess_1190
+  - China_Haikou_vmess_1191
+  - China_None_trojan_1192
+  - United Kingdom_None_trojan_1193
+  - South Korea_Eunpyeong-gu_trojan_1194
+  - South Korea_Eunpyeong-gu_trojan_1195
+  - South Korea_Eunpyeong-gu_trojan_1196
+  - The Netherlands_Meppel_ss_131
+  - Denmark_Copenhagen_ss_132
+  - United States_None_vmess_133
+  - China_None_trojan_134
+  - France_None_hy_0
+  - France_None_hy_1
+  - France_None_hy_2
+  - France_None_hy_3
+  - United States_None_hy2_0
+  - United States_None_hy2_1
+  - United States_None_hy2_2
+  - United States_None_hy2_3
 rules:
-- RULE-SET,applications,DIRECT
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
-- DOMAIN,services.googleapis.cn,🚀 节点选择
-- RULE-SET,private,DIRECT
-- RULE-SET,reject,REJECT
-- RULE-SET,icloud,DIRECT
-- RULE-SET,apple,DIRECT
-- RULE-SET,google,DIRECT
-- RULE-SET,proxy,🚀 节点选择
-- RULE-SET,direct,DIRECT
-- RULE-SET,lancidr,DIRECT
-- RULE-SET,cncidr,DIRECT
-- RULE-SET,telegramcidr,🚀 节点选择
 - GEOIP,LAN,DIRECT
 - GEOIP,CN,DIRECT
-- MATCH,🚀 节点选择
+- MATCH,节点选择
