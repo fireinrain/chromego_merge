@@ -5,7 +5,7 @@ import logging
 import geoip2.database
 import socket
 import re
-
+import random
 
 # 提取节点
 def process_urls(url_file, processor):
@@ -28,9 +28,10 @@ def process_urls(url_file, processor):
 def process_clash(data, index):
     content = yaml.safe_load(data)
     proxies = content.get("proxies", [])
+    randint = random.randint(0, len(proxies))
     for i, proxy in enumerate(proxies):
         location = get_physical_location(proxy["server"])
-        proxy["name"] = f"{location}_{proxy['type']}_{index}{i+1}"
+        proxy["name"] = f"{location}_{proxy['type']}_{randint}{index}{i+1}"
     merged_proxies.extend(proxies)
 
 
