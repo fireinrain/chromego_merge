@@ -37,7 +37,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria2_011
+- name: Unknown_hysteria2_111
   type: hysteria2
   server: 2001:bc8:32d7:302::11
   port: 20088
@@ -74,7 +74,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_tuic_041
+- name: Unknown_tuic_141
   server: 2001:bc8:32d7:302::16
   port: 34997
   type: tuic
@@ -99,7 +99,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria_061
+- name: Unknown_hysteria_161
   type: hysteria
   server: 2604:6600:2004::18b
   port: 38845
@@ -122,7 +122,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: The Netherlands_Amsterdam_hysteria_081
+- name: The Netherlands_Amsterdam_hysteria_181
   type: hysteria
   server: 109.104.153.91
   port: 37519
@@ -134,7 +134,7 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: United States_None_hysteria_191
+- name: United States_None_hysteria_091
   type: hysteria
   server: 208.87.243.151
   port: 38845
@@ -145,7 +145,7 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria_192
+- name: Unknown_hysteria_092
   type: hysteria
   server: 2604:6600:2004::18b
   port: 38845
@@ -156,6 +156,36 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
+- alterId: 0
+  cipher: auto
+  name: Unknown_vmess_2111
+  network: tcp
+  port: '1'
+  server: 0.0.0.0
+  servername: web.51.la
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: Unknown_vmess_2112
+  network: tcp
+  port: '2'
+  server: 0.0.0.0
+  servername: web.51.la
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: Unknown_vmess_2113
+  network: tcp
+  port: '3'
+  server: 0.0.0.0
+  servername: web.51.la
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
 - name: The Netherlands_Amsterdam_hy_0
   type: hysteria
   server: 109.104.153.91
@@ -279,16 +309,19 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - Unknown_hysteria2_101
-  - Unknown_hysteria2_011
+  - Unknown_hysteria2_111
   - Unknown_tuic_021
   - Unknown_hysteria2_031
-  - Unknown_tuic_041
+  - Unknown_tuic_141
   - Unknown_hysteria2_151
-  - Unknown_hysteria_061
+  - Unknown_hysteria_161
   - United States_Los Angeles_hysteria_071
-  - The Netherlands_Amsterdam_hysteria_081
-  - United States_None_hysteria_191
-  - Unknown_hysteria_192
+  - The Netherlands_Amsterdam_hysteria_181
+  - United States_None_hysteria_091
+  - Unknown_hysteria_092
+  - Unknown_vmess_2111
+  - Unknown_vmess_2112
+  - Unknown_vmess_2113
   - The Netherlands_Amsterdam_hy_0
   - The Netherlands_Amsterdam_hy_1
   - The Netherlands_Amsterdam_hy_2
@@ -306,16 +339,19 @@ proxy-groups:
   tolerance: 50
   proxies:
   - Unknown_hysteria2_101
-  - Unknown_hysteria2_011
+  - Unknown_hysteria2_111
   - Unknown_tuic_021
   - Unknown_hysteria2_031
-  - Unknown_tuic_041
+  - Unknown_tuic_141
   - Unknown_hysteria2_151
-  - Unknown_hysteria_061
+  - Unknown_hysteria_161
   - United States_Los Angeles_hysteria_071
-  - The Netherlands_Amsterdam_hysteria_081
-  - United States_None_hysteria_191
-  - Unknown_hysteria_192
+  - The Netherlands_Amsterdam_hysteria_181
+  - United States_None_hysteria_091
+  - Unknown_hysteria_092
+  - Unknown_vmess_2111
+  - Unknown_vmess_2112
+  - Unknown_vmess_2113
   - The Netherlands_Amsterdam_hy_0
   - The Netherlands_Amsterdam_hy_1
   - The Netherlands_Amsterdam_hy_2
