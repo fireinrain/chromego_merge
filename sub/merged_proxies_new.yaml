@@ -25,7 +25,7 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: Unknown_hysteria2_001
+- name: Unknown_hysteria2_101
   type: hysteria2
   server: 2001:bc8:32d7:302::11
   port: 20088
@@ -37,7 +37,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria2_011
+- name: Unknown_hysteria2_111
   type: hysteria2
   server: 2001:bc8:32d7:302::11
   port: 20088
@@ -49,7 +49,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_tuic_121
+- name: Unknown_tuic_021
   server: 2001:bc8:32d7:302::16
   port: 34997
   type: tuic
@@ -62,7 +62,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: Unknown_hysteria2_131
+- name: Unknown_hysteria2_031
   type: hysteria2
   server: 2001:bc8:32d7:302::17
   port: 20088
@@ -123,7 +123,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: France_Paris_hysteria_181
+- name: France_Paris_hysteria_081
   type: hysteria
   server: 62.210.127.217
   port: 50011
@@ -269,15 +269,15 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - Unknown_hysteria2_001
-  - Unknown_hysteria2_011
-  - Unknown_tuic_121
-  - Unknown_hysteria2_131
+  - Unknown_hysteria2_101
+  - Unknown_hysteria2_111
+  - Unknown_tuic_021
+  - Unknown_hysteria2_031
   - Unknown_tuic_141
   - Unknown_hysteria2_151
   - Unknown_hysteria_061
   - France_Paris_hysteria_171
-  - France_Paris_hysteria_181
+  - France_Paris_hysteria_081
   - Unknown_hysteria_191
   - The Netherlands_Amsterdam_hy_0
   - The Netherlands_Amsterdam_hy_1
@@ -295,15 +295,15 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - Unknown_hysteria2_001
-  - Unknown_hysteria2_011
-  - Unknown_tuic_121
-  - Unknown_hysteria2_131
+  - Unknown_hysteria2_101
+  - Unknown_hysteria2_111
+  - Unknown_tuic_021
+  - Unknown_hysteria2_031
   - Unknown_tuic_141
   - Unknown_hysteria2_151
   - Unknown_hysteria_061
   - France_Paris_hysteria_171
-  - France_Paris_hysteria_181
+  - France_Paris_hysteria_081
   - Unknown_hysteria_191
   - The Netherlands_Amsterdam_hy_0
   - The Netherlands_Amsterdam_hy_1
