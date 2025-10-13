@@ -25,7 +25,7 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: Unknown_hysteria2_101
+- name: Unknown_hysteria2_001
   type: hysteria2
   server: 2001:bc8:32d7:302::11
   port: 20088
@@ -37,7 +37,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria2_011
+- name: Unknown_hysteria2_111
   type: hysteria2
   server: 2001:bc8:32d7:302::11
   port: 20088
@@ -62,7 +62,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: Unknown_hysteria2_031
+- name: Unknown_hysteria2_131
   type: hysteria2
   server: 2001:bc8:32d7:302::17
   port: 20088
@@ -74,7 +74,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_tuic_041
+- name: Unknown_tuic_141
   server: 2001:bc8:32d7:302::16
   port: 34997
   type: tuic
@@ -111,7 +111,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: France_Paris_hysteria_171
+- name: France_Paris_hysteria_071
   type: hysteria
   server: 62.210.127.217
   port: 50011
@@ -123,7 +123,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: France_Paris_hysteria_081
+- name: France_Paris_hysteria_181
   type: hysteria
   server: 62.210.127.217
   port: 50011
@@ -135,7 +135,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria_091
+- name: Unknown_hysteria_191
   type: hysteria
   server: 2001:bc8:32d7:158::4
   port: 50011
@@ -148,7 +148,7 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
 - cipher: aes-256-cfb
-  name: Ireland_Dublin_ss_1101
+  name: Ireland_Dublin_ss_9101
   password: amazonskr05
   port: 443
   server: 34.245.185.129
@@ -156,7 +156,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: China_None_vmess_1102
+  name: China_None_vmess_9102
   network: ws
   port: '30809'
   server: v9.heduian.link
@@ -171,7 +171,7 @@ proxies:
       Host: baidu.com
     path: /oooo
 - cipher: aes-256-gcm
-  name: Hong Kong_None_ss_1103
+  name: Hong Kong_None_ss_9103
   password: ccf426f1fe78
   plugin: v2ray-plugin
   plugin-opts:
@@ -187,284 +187,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1104
-  port: 30485
-  server: 103.224.80.67
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: a9ba904e-2d8b-401e-9226-b5114c049f05
-- name: China_None_trojan_1105
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 4419
-  server: 221.128.195.221
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: Japan_Miyamae Ku_trojan_1106
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 126.47.92.160
-  skip-cert-verify: true
-  sni: fe2.update.microsoft.com
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: China_None_vmess_1107
-  network: ws
-  port: '30806'
-  server: v6.heduian.link
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
-- name: China_None_trojan_1108
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 1806
-  server: 36.156.102.84
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: China_None_trojan_1109
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 3160
-  server: 36.156.102.84
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: China_None_trojan_11010
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 2173
-  server: 36.156.102.84
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: China_None_trojan_11011
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 5321
-  server: 36.156.102.84
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: Singapore_Singapore_ss_11012
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: (TG @ripaojiedian)32cf132:178330
-    mode: tls
-  port: 2377
-  server: 5.44.249.43
-  tfo: false
-  type: ss
-- name: China_None_trojan_11013
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 24673
-  server: 36.156.102.84
-  skip-cert-verify: true
-  sni: fe2.update.microsoft.com
-  type: trojan
-- name: China_None_trojan_11014
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 2381
-  server: 36.156.102.84
-  skip-cert-verify: true
-  sni: fe2.update.microsoft.com
-  type: trojan
-- name: Singapore_None_trojan_11015
-  network: ws
-  password: wb6368
-  port: 2087
-  server: 92.243.75.49
-  skip-cert-verify: false
-  sni: hsdgbuys.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: hsdgbuys.pages.dev
-    path: /
-- cipher: aes-256-cfb
-  name: Vietnam_None_ss_11016
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.136
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: Hong Kong_None_vmess_11017
-  network: tcp
-  port: '30485'
-  server: 103.224.80.67
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a9ba904e-2d8b-401e-9226-b5114c049f05
-- name: Singapore_None_trojan_11018
-  network: ws
-  password: wb6368
-  port: 2087
-  server: 92.243.75.49
-  sni: hsdgbuys.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: hsdgbuys.pages.dev
-    path: '%2F'
-- name: Singapore_Singapore_trojan_11019
-  password: installshield
-  port: 8443
-  server: 38.180.106.124
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: Unknown_vmess_14111
-  network: tcp
-  port: '80'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: Unknown_vmess_14112
-  network: tcp
-  port: '81'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: Unknown_vmess_14113
-  network: tcp
-  port: '82'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: Unknown_vmess_14114
-  network: tcp
-  port: '83'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: Unknown_vmess_14115
-  network: tcp
-  port: '84'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: Unknown_vmess_14116
-  network: tcp
-  port: '85'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: Unknown_vmess_14117
-  network: tcp
-  port: '86'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: Unknown_vmess_14118
-  network: tcp
-  port: '87'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: Unknown_vmess_14119
-  network: tcp
-  port: '88'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: Unknown_vmess_141110
-  network: tcp
-  port: '89'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- cipher: aes-256-cfb
-  name: Ireland_Dublin_ss_141111
-  password: amazonskr05
-  port: 443
-  server: 34.245.185.129
-  tfo: false
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: China_None_vmess_141112
-  network: ws
-  port: '30809'
-  server: v9.heduian.link
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
-- cipher: aes-256-gcm
-  name: Hong Kong_None_ss_141113
-  password: ccf426f1fe78
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: newroot2v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /zksuapgx
-    skip-cert-verify: false
-    tls: true
-  port: 443
-  server: 103.103.245.158
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: Hong Kong_None_vmess_141114
+  name: Hong Kong_None_vmess_9104
   port: 41522
   server: 43.247.135.17
   skip-cert-verify: false
@@ -472,21 +195,21 @@ proxies:
   tls: false
   type: vmess
   uuid: ea897b9a-0894-4f17-ab5b-7e059678734d
-- name: Japan_Yokosuka_trojan_141115
+- name: Japan_Yokosuka_trojan_9105
   password: 253bc477d4e43c209f2d427272968280
   port: 443
   server: 126.66.52.118
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Hong Kong_Man Kok_trojan_141116
+- name: Hong Kong_Man Kok_trojan_9106
   password: 253bc477d4e43c209f2d427272968280
   port: 443
   server: 58.152.53.162
   skip-cert-verify: true
   sni: fe2.update.microsoft.com
   type: trojan
-- name: China_None_trojan_141117
+- name: China_None_trojan_9107
   password: 253bc477d4e43c209f2d427272968280
   port: 1920
   server: 36.156.102.84
@@ -495,7 +218,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: China_None_vmess_141118
+  name: China_None_vmess_9108
   network: ws
   port: '30806'
   server: v6.heduian.link
@@ -509,7 +232,7 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- name: China_None_trojan_141119
+- name: China_None_trojan_9109
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 3160
@@ -518,13 +241,13 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - cipher: aes-256-cfb
-  name: South Korea_None_ss_141120
+  name: South Korea_None_ss_91010
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
   tfo: false
   type: ss
-- name: China_None_trojan_141121
+- name: China_None_trojan_91011
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 2173
@@ -532,7 +255,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: China_None_trojan_141122
+- name: China_None_trojan_91012
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 5321
@@ -541,7 +264,7 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: Singapore_Singapore_ss_141123
+  name: Singapore_Singapore_ss_91013
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
@@ -551,7 +274,7 @@ proxies:
   server: 5.44.249.43
   tfo: false
   type: ss
-- name: China_None_trojan_141124
+- name: China_None_trojan_91014
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 24673
@@ -559,7 +282,7 @@ proxies:
   skip-cert-verify: true
   sni: fe2.update.microsoft.com
   type: trojan
-- name: China_None_trojan_141125
+- name: China_None_trojan_91015
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 2381
@@ -568,7 +291,7 @@ proxies:
   sni: fe2.update.microsoft.com
   type: trojan
 - cipher: aes-256-cfb
-  name: Vietnam_None_ss_141126
+  name: Vietnam_None_ss_91016
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.27
@@ -576,7 +299,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_141127
+  name: Hong Kong_None_vmess_91017
   network: tcp
   port: '30485'
   server: 103.224.80.67
@@ -584,7 +307,7 @@ proxies:
   tls: false
   type: vmess
   uuid: a9ba904e-2d8b-401e-9226-b5114c049f05
-- name: China_None_trojan_141128
+- name: China_None_trojan_91018
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 4419
@@ -592,7 +315,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: Japan_Miyamae Ku_trojan_141129
+- name: Japan_Miyamae Ku_trojan_91019
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 443
@@ -600,14 +323,14 @@ proxies:
   skip-cert-verify: true
   sni: fe2.update.microsoft.com
   type: trojan
-- name: China_None_trojan_141130
+- name: China_None_trojan_91020
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 1806
   server: 36.156.102.84
   sni: www.nintendogames.net
   type: trojan
-- name: Singapore_None_trojan_141131
+- name: Singapore_None_trojan_91021
   network: ws
   password: wb6368
   port: 2087
@@ -618,7 +341,7 @@ proxies:
     headers:
       Host: hsdgbuys.pages.dev
     path: '%2F'
-- name: Singapore_None_trojan_141132
+- name: Singapore_None_trojan_91022
   network: ws
   password: wb6368
   port: 2087
@@ -631,7 +354,311 @@ proxies:
     headers:
       Host: hsdgbuys.pages.dev
     path: /
-- name: Singapore_Singapore_trojan_141133
+- name: Singapore_Singapore_trojan_91023
+  password: installshield
+  port: 8443
+  server: 38.180.106.124
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: Unknown_vmess_9111
+  network: tcp
+  port: '80'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: Unknown_vmess_9112
+  network: tcp
+  port: '81'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: Unknown_vmess_9113
+  network: tcp
+  port: '82'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: Unknown_vmess_9114
+  network: tcp
+  port: '83'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: Unknown_vmess_9115
+  network: tcp
+  port: '84'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: Unknown_vmess_9116
+  network: tcp
+  port: '85'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: Unknown_vmess_9117
+  network: tcp
+  port: '86'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: Unknown_vmess_9118
+  network: tcp
+  port: '87'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: Unknown_vmess_9119
+  network: tcp
+  port: '88'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: Unknown_vmess_91110
+  network: tcp
+  port: '89'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- cipher: aes-256-cfb
+  name: Ireland_Dublin_ss_91111
+  password: amazonskr05
+  port: 443
+  server: 34.245.185.129
+  tfo: false
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: China_None_vmess_91112
+  network: ws
+  port: '30809'
+  server: v9.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- cipher: aes-256-gcm
+  name: Hong Kong_None_ss_91113
+  password: ccf426f1fe78
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: newroot2v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /zksuapgx
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: 103.103.245.158
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: Hong Kong_None_vmess_91114
+  port: 41522
+  server: 43.247.135.17
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: ea897b9a-0894-4f17-ab5b-7e059678734d
+- name: Japan_Yokosuka_trojan_91115
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 126.66.52.118
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: Hong Kong_Man Kok_trojan_91116
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 58.152.53.162
+  skip-cert-verify: true
+  sni: fe2.update.microsoft.com
+  type: trojan
+- name: China_None_trojan_91117
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1920
+  server: 36.156.102.84
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: China_None_vmess_91118
+  network: ws
+  port: '30806'
+  server: v6.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
+- name: China_None_trojan_91119
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 3160
+  server: 36.156.102.84
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- cipher: aes-256-cfb
+  name: South Korea_None_ss_91120
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  tfo: false
+  type: ss
+- name: China_None_trojan_91121
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 2173
+  server: 36.156.102.84
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: China_None_trojan_91122
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 5321
+  server: 36.156.102.84
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: Singapore_Singapore_ss_91123
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @ripaojiedian)32cf132:178330
+    mode: tls
+  port: 2377
+  server: 5.44.249.43
+  tfo: false
+  type: ss
+- name: China_None_trojan_91124
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 24673
+  server: 36.156.102.84
+  skip-cert-verify: true
+  sni: fe2.update.microsoft.com
+  type: trojan
+- name: China_None_trojan_91125
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 2381
+  server: 36.156.102.84
+  skip-cert-verify: true
+  sni: fe2.update.microsoft.com
+  type: trojan
+- cipher: aes-256-cfb
+  name: Vietnam_None_ss_91126
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.27
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: Hong Kong_None_vmess_91127
+  network: tcp
+  port: '30485'
+  server: 103.224.80.67
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a9ba904e-2d8b-401e-9226-b5114c049f05
+- name: China_None_trojan_91128
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 4419
+  server: 221.128.195.221
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: Japan_Miyamae Ku_trojan_91129
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 126.47.92.160
+  skip-cert-verify: true
+  sni: fe2.update.microsoft.com
+  type: trojan
+- name: China_None_trojan_91130
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1806
+  server: 36.156.102.84
+  sni: www.nintendogames.net
+  type: trojan
+- name: Singapore_None_trojan_91131
+  network: ws
+  password: wb6368
+  port: 2087
+  server: 92.243.75.49
+  sni: hsdgbuys.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: hsdgbuys.pages.dev
+    path: '%2F'
+- name: Singapore_None_trojan_91132
+  network: ws
+  password: wb6368
+  port: 2087
+  server: 92.243.75.49
+  skip-cert-verify: false
+  sni: hsdgbuys.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: hsdgbuys.pages.dev
+    path: /
+- name: Singapore_Singapore_trojan_91133
   password: installshield
   port: 8443
   server: 38.180.106.124
@@ -728,68 +755,72 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - Unknown_hysteria2_101
-  - Unknown_hysteria2_011
+  - Unknown_hysteria2_001
+  - Unknown_hysteria2_111
   - Unknown_tuic_021
-  - Unknown_hysteria2_031
-  - Unknown_tuic_041
+  - Unknown_hysteria2_131
+  - Unknown_tuic_141
   - Unknown_hysteria2_151
   - Unknown_hysteria_161
-  - France_Paris_hysteria_171
-  - France_Paris_hysteria_081
-  - Unknown_hysteria_091
-  - Ireland_Dublin_ss_1101
-  - China_None_vmess_1102
-  - Hong Kong_None_ss_1103
-  - Hong Kong_None_vmess_1104
-  - China_None_trojan_1105
-  - Japan_Miyamae Ku_trojan_1106
-  - China_None_vmess_1107
-  - China_None_trojan_1108
-  - China_None_trojan_1109
-  - China_None_trojan_11010
-  - China_None_trojan_11011
-  - Singapore_Singapore_ss_11012
-  - China_None_trojan_11013
-  - China_None_trojan_11014
-  - Singapore_None_trojan_11015
-  - Vietnam_None_ss_11016
-  - Hong Kong_None_vmess_11017
-  - Singapore_None_trojan_11018
-  - Singapore_Singapore_trojan_11019
-  - Unknown_vmess_14111
-  - Unknown_vmess_14112
-  - Unknown_vmess_14113
-  - Unknown_vmess_14114
-  - Unknown_vmess_14115
-  - Unknown_vmess_14116
-  - Unknown_vmess_14117
-  - Unknown_vmess_14118
-  - Unknown_vmess_14119
-  - Unknown_vmess_141110
-  - Ireland_Dublin_ss_141111
-  - China_None_vmess_141112
-  - Hong Kong_None_ss_141113
-  - Hong Kong_None_vmess_141114
-  - Japan_Yokosuka_trojan_141115
-  - Hong Kong_Man Kok_trojan_141116
-  - China_None_trojan_141117
-  - China_None_vmess_141118
-  - China_None_trojan_141119
-  - South Korea_None_ss_141120
-  - China_None_trojan_141121
-  - China_None_trojan_141122
-  - Singapore_Singapore_ss_141123
-  - China_None_trojan_141124
-  - China_None_trojan_141125
-  - Vietnam_None_ss_141126
-  - Hong Kong_None_vmess_141127
-  - China_None_trojan_141128
-  - Japan_Miyamae Ku_trojan_141129
-  - China_None_trojan_141130
-  - Singapore_None_trojan_141131
-  - Singapore_None_trojan_141132
-  - Singapore_Singapore_trojan_141133
+  - France_Paris_hysteria_071
+  - France_Paris_hysteria_181
+  - Unknown_hysteria_191
+  - Ireland_Dublin_ss_9101
+  - China_None_vmess_9102
+  - Hong Kong_None_ss_9103
+  - Hong Kong_None_vmess_9104
+  - Japan_Yokosuka_trojan_9105
+  - Hong Kong_Man Kok_trojan_9106
+  - China_None_trojan_9107
+  - China_None_vmess_9108
+  - China_None_trojan_9109
+  - South Korea_None_ss_91010
+  - China_None_trojan_91011
+  - China_None_trojan_91012
+  - Singapore_Singapore_ss_91013
+  - China_None_trojan_91014
+  - China_None_trojan_91015
+  - Vietnam_None_ss_91016
+  - Hong Kong_None_vmess_91017
+  - China_None_trojan_91018
+  - Japan_Miyamae Ku_trojan_91019
+  - China_None_trojan_91020
+  - Singapore_None_trojan_91021
+  - Singapore_None_trojan_91022
+  - Singapore_Singapore_trojan_91023
+  - Unknown_vmess_9111
+  - Unknown_vmess_9112
+  - Unknown_vmess_9113
+  - Unknown_vmess_9114
+  - Unknown_vmess_9115
+  - Unknown_vmess_9116
+  - Unknown_vmess_9117
+  - Unknown_vmess_9118
+  - Unknown_vmess_9119
+  - Unknown_vmess_91110
+  - Ireland_Dublin_ss_91111
+  - China_None_vmess_91112
+  - Hong Kong_None_ss_91113
+  - Hong Kong_None_vmess_91114
+  - Japan_Yokosuka_trojan_91115
+  - Hong Kong_Man Kok_trojan_91116
+  - China_None_trojan_91117
+  - China_None_vmess_91118
+  - China_None_trojan_91119
+  - South Korea_None_ss_91120
+  - China_None_trojan_91121
+  - China_None_trojan_91122
+  - Singapore_Singapore_ss_91123
+  - China_None_trojan_91124
+  - China_None_trojan_91125
+  - Vietnam_None_ss_91126
+  - Hong Kong_None_vmess_91127
+  - China_None_trojan_91128
+  - Japan_Miyamae Ku_trojan_91129
+  - China_None_trojan_91130
+  - Singapore_None_trojan_91131
+  - Singapore_None_trojan_91132
+  - Singapore_Singapore_trojan_91133
   - The Netherlands_Amsterdam_hy_0
   - The Netherlands_Amsterdam_hy_1
   - The Netherlands_Amsterdam_hy_2
@@ -802,68 +833,72 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - Unknown_hysteria2_101
-  - Unknown_hysteria2_011
+  - Unknown_hysteria2_001
+  - Unknown_hysteria2_111
   - Unknown_tuic_021
-  - Unknown_hysteria2_031
-  - Unknown_tuic_041
+  - Unknown_hysteria2_131
+  - Unknown_tuic_141
   - Unknown_hysteria2_151
   - Unknown_hysteria_161
-  - France_Paris_hysteria_171
-  - France_Paris_hysteria_081
-  - Unknown_hysteria_091
-  - Ireland_Dublin_ss_1101
-  - China_None_vmess_1102
-  - Hong Kong_None_ss_1103
-  - Hong Kong_None_vmess_1104
-  - China_None_trojan_1105
-  - Japan_Miyamae Ku_trojan_1106
-  - China_None_vmess_1107
-  - China_None_trojan_1108
-  - China_None_trojan_1109
-  - China_None_trojan_11010
-  - China_None_trojan_11011
-  - Singapore_Singapore_ss_11012
-  - China_None_trojan_11013
-  - China_None_trojan_11014
-  - Singapore_None_trojan_11015
-  - Vietnam_None_ss_11016
-  - Hong Kong_None_vmess_11017
-  - Singapore_None_trojan_11018
-  - Singapore_Singapore_trojan_11019
-  - Unknown_vmess_14111
-  - Unknown_vmess_14112
-  - Unknown_vmess_14113
-  - Unknown_vmess_14114
-  - Unknown_vmess_14115
-  - Unknown_vmess_14116
-  - Unknown_vmess_14117
-  - Unknown_vmess_14118
-  - Unknown_vmess_14119
-  - Unknown_vmess_141110
-  - Ireland_Dublin_ss_141111
-  - China_None_vmess_141112
-  - Hong Kong_None_ss_141113
-  - Hong Kong_None_vmess_141114
-  - Japan_Yokosuka_trojan_141115
-  - Hong Kong_Man Kok_trojan_141116
-  - China_None_trojan_141117
-  - China_None_vmess_141118
-  - China_None_trojan_141119
-  - South Korea_None_ss_141120
-  - China_None_trojan_141121
-  - China_None_trojan_141122
-  - Singapore_Singapore_ss_141123
-  - China_None_trojan_141124
-  - China_None_trojan_141125
-  - Vietnam_None_ss_141126
-  - Hong Kong_None_vmess_141127
-  - China_None_trojan_141128
-  - Japan_Miyamae Ku_trojan_141129
-  - China_None_trojan_141130
-  - Singapore_None_trojan_141131
-  - Singapore_None_trojan_141132
-  - Singapore_Singapore_trojan_141133
+  - France_Paris_hysteria_071
+  - France_Paris_hysteria_181
+  - Unknown_hysteria_191
+  - Ireland_Dublin_ss_9101
+  - China_None_vmess_9102
+  - Hong Kong_None_ss_9103
+  - Hong Kong_None_vmess_9104
+  - Japan_Yokosuka_trojan_9105
+  - Hong Kong_Man Kok_trojan_9106
+  - China_None_trojan_9107
+  - China_None_vmess_9108
+  - China_None_trojan_9109
+  - South Korea_None_ss_91010
+  - China_None_trojan_91011
+  - China_None_trojan_91012
+  - Singapore_Singapore_ss_91013
+  - China_None_trojan_91014
+  - China_None_trojan_91015
+  - Vietnam_None_ss_91016
+  - Hong Kong_None_vmess_91017
+  - China_None_trojan_91018
+  - Japan_Miyamae Ku_trojan_91019
+  - China_None_trojan_91020
+  - Singapore_None_trojan_91021
+  - Singapore_None_trojan_91022
+  - Singapore_Singapore_trojan_91023
+  - Unknown_vmess_9111
+  - Unknown_vmess_9112
+  - Unknown_vmess_9113
+  - Unknown_vmess_9114
+  - Unknown_vmess_9115
+  - Unknown_vmess_9116
+  - Unknown_vmess_9117
+  - Unknown_vmess_9118
+  - Unknown_vmess_9119
+  - Unknown_vmess_91110
+  - Ireland_Dublin_ss_91111
+  - China_None_vmess_91112
+  - Hong Kong_None_ss_91113
+  - Hong Kong_None_vmess_91114
+  - Japan_Yokosuka_trojan_91115
+  - Hong Kong_Man Kok_trojan_91116
+  - China_None_trojan_91117
+  - China_None_vmess_91118
+  - China_None_trojan_91119
+  - South Korea_None_ss_91120
+  - China_None_trojan_91121
+  - China_None_trojan_91122
+  - Singapore_Singapore_ss_91123
+  - China_None_trojan_91124
+  - China_None_trojan_91125
+  - Vietnam_None_ss_91126
+  - Hong Kong_None_vmess_91127
+  - China_None_trojan_91128
+  - Japan_Miyamae Ku_trojan_91129
+  - China_None_trojan_91130
+  - Singapore_None_trojan_91131
+  - Singapore_None_trojan_91132
+  - Singapore_Singapore_trojan_91133
   - The Netherlands_Amsterdam_hy_0
   - The Netherlands_Amsterdam_hy_1
   - The Netherlands_Amsterdam_hy_2
