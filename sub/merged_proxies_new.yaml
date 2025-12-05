@@ -25,7 +25,7 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: Unknown_hysteria_001
+- name: Unknown_hysteria_101
   type: hysteria
   server: 2001:bc8:32d7:17b::2
   port: 11000
@@ -49,7 +49,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_tuic_121
+- name: Unknown_tuic_021
   server: 2001:bc8:32d7:302::16
   port: 34997
   type: tuic
@@ -74,7 +74,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_tuic_141
+- name: Unknown_tuic_041
   server: 2001:bc8:32d7:302::16
   port: 34997
   type: tuic
@@ -99,7 +99,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria_061
+- name: Unknown_hysteria_161
   type: hysteria
   server: 2001:bc8:32d7:158::4
   port: 50011
@@ -135,7 +135,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria_191
+- name: Unknown_hysteria_091
   type: hysteria
   server: 2001:bc8:32d7:158::4
   port: 50011
@@ -181,16 +181,16 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - Unknown_hysteria_001
+  - Unknown_hysteria_101
   - Unknown_hysteria_011
-  - Unknown_tuic_121
+  - Unknown_tuic_021
   - Unknown_hysteria_031
-  - Unknown_tuic_141
+  - Unknown_tuic_041
   - Unknown_hysteria_051
-  - Unknown_hysteria_061
+  - Unknown_hysteria_161
   - France_None_hysteria_071
   - Unknown_hysteria_081
-  - Unknown_hysteria_191
+  - Unknown_hysteria_091
   - Unknown_reality_0
   - Unknown_reality_3
 - name: 自动选择
@@ -199,16 +199,16 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - Unknown_hysteria_001
+  - Unknown_hysteria_101
   - Unknown_hysteria_011
-  - Unknown_tuic_121
+  - Unknown_tuic_021
   - Unknown_hysteria_031
-  - Unknown_tuic_141
+  - Unknown_tuic_041
   - Unknown_hysteria_051
-  - Unknown_hysteria_061
+  - Unknown_hysteria_161
   - France_None_hysteria_071
   - Unknown_hysteria_081
-  - Unknown_hysteria_191
+  - Unknown_hysteria_091
   - Unknown_reality_0
   - Unknown_reality_3
 rules:
