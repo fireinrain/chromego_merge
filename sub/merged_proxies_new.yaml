@@ -26,119 +26,119 @@ dns:
     - 240.0.0.0/4
 proxies:
 - cipher: aes-256-cfb
-  name: United States_None_ss_7101
+  name: United States_None_ss_6101
   password: amazonskr05
   port: 443
   server: 63.180.254.10
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Tuen Mun_vmess_7102
+  name: Hong Kong_Tuen Mun_vmess_6102
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: Japan_Tokyo_trojan_7103
+- name: Hong Kong_None_trojan_6103
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 52687
-  server: 3.112.254.212
+  server: 18.162.152.196
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Japan_Tokyo_trojan_7104
+- name: Japan_Tokyo_trojan_6104
   network: tcp
   password: BxceQaOe
-  port: 54708
-  server: 43.206.194.205
+  port: 5823
+  server: 54.238.64.8
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: Hong Kong_None_trojan_7105
+- name: Hong Kong_None_trojan_6105
   network: tcp
   password: BxceQaOe
-  port: 50612
-  server: 43.199.32.10
+  port: 22075
+  server: 43.199.67.80
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: Japan_Tokyo_trojan_7106
+- name: Japan_Tokyo_trojan_6106
   network: tcp
   password: BxceQaOe
-  port: 3278
-  server: 54.249.58.71
+  port: 3022
+  server: 13.115.45.57
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: Japan_Tokyo_trojan_7107
+- name: Poland_None_trojan_6107
+  network: tcp
+  password: 1774240c00db2b77d5a99f6540c47b69
+  port: 4937
+  server: 95.40.21.164
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: Japan_Tokyo_trojan_6108
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 2001
-  server: 54.249.58.71
+  server: 18.182.55.2
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Hong Kong_None_trojan_7108
-  network: tcp
-  password: 1774240c00db2b77d5a99f6540c47b69
-  port: 4380
-  server: 43.199.32.10
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: Japan_Tokyo_trojan_7109
-  network: tcp
-  password: 1774240c00db2b77d5a99f6540c47b69
-  port: 5594
-  server: 54.249.58.71
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: Japan_Tokyo_trojan_71010
+- name: United States_San Jose_trojan_6109
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 32876
-  server: 54.249.58.71
+  server: 54.193.48.211
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Hong Kong_None_trojan_71011
+- name: Japan_Tokyo_trojan_61010
+  network: tcp
+  password: 1774240c00db2b77d5a99f6540c47b69
+  port: 32876
+  server: 160.16.132.38
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: Hong Kong_None_trojan_61011
   network: tcp
   password: BxceQaOe
-  port: 30726
-  server: 43.199.253.7
+  port: 25675
+  server: 16.162.220.143
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: Japan_Tokyo_trojan_71012
+- name: Japan_Tokyo_trojan_61012
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 4019
-  server: 13.231.43.53
+  server: 52.193.48.211
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Hong Kong_None_trojan_71013
+- name: Japan_Tokyo_trojan_61013
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 3057
-  server: 43.199.32.10
+  server: 18.182.55.2
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Japan_Tokyo_trojan_71014
+- name: Hong Kong_None_trojan_61014
   network: tcp
   password: BxceQaOe
-  port: 14919
-  server: 52.195.168.226
+  port: 23255
+  server: 18.166.61.147
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Tuen Mun_vmess_71015
+  name: Hong Kong_Tuen Mun_vmess_61015
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -146,7 +146,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: Austria_None_trojan_71016
+- name: Austria_None_trojan_61016
   network: ws
   password: '1234567890'
   port: 443
@@ -159,7 +159,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /
-- name: Austria_None_trojan_71017
+- name: Austria_None_trojan_61017
   network: ws
   password: '1234567890'
   port: 443
@@ -172,7 +172,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Bulgaria_None_trojan_71018
+- name: Bulgaria_None_trojan_61018
   network: ws
   password: '1234567890'
   port: 443
@@ -185,7 +185,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Bulgaria_None_trojan_71019
+- name: Bulgaria_None_trojan_61019
   network: ws
   password: '1234567890'
   port: 443
@@ -198,7 +198,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Lithuania_Vilnius_trojan_71020
+- name: Lithuania_Vilnius_trojan_61020
   network: ws
   password: '1234567890'
   port: 443
@@ -211,7 +211,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Poland_Warsaw_trojan_71021
+- name: Poland_Warsaw_trojan_61021
   network: ws
   password: '1234567890'
   port: 443
@@ -224,7 +224,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Lithuania_Vilnius_trojan_71022
+- name: Lithuania_Vilnius_trojan_61022
   network: ws
   password: '1234567890'
   port: 443
@@ -237,7 +237,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Poland_Warsaw_trojan_71023
+- name: Poland_Warsaw_trojan_61023
   network: ws
   password: '1234567890'
   port: 443
@@ -250,7 +250,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /
-- name: Poland_Warsaw_trojan_71024
+- name: Poland_Warsaw_trojan_61024
   network: ws
   password: '1234567890'
   port: 443
@@ -263,7 +263,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Moldova_Chisinau_trojan_71025
+- name: Moldova_Chisinau_trojan_61025
   network: ws
   password: '1234567890'
   port: 8443
@@ -276,7 +276,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Lithuania_Vilnius_trojan_71026
+- name: Lithuania_Vilnius_trojan_61026
   network: ws
   password: '1234567890'
   port: 443
@@ -289,7 +289,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Lithuania_Vilnius_trojan_71027
+- name: Lithuania_Vilnius_trojan_61027
   network: ws
   password: '1234567890'
   port: 443
@@ -302,7 +302,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Israel_Jerusalem_trojan_71028
+- name: Israel_Jerusalem_trojan_61028
   network: ws
   password: '1234567890'
   port: 443
@@ -315,7 +315,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /
-- name: Canada_Ottawa_trojan_71029
+- name: Canada_Ottawa_trojan_61029
   network: ws
   password: '1234567890'
   port: 443
@@ -328,7 +328,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /
-- name: Czechia_Doksy_trojan_71030
+- name: Czechia_Doksy_trojan_61030
   network: ws
   password: '1234567890'
   port: 443
@@ -341,7 +341,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Czechia_Mimon_trojan_71031
+- name: Czechia_Mimon_trojan_61031
   network: ws
   password: '1234567890'
   port: 443
@@ -354,7 +354,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Czechia_Mimon_trojan_71032
+- name: Czechia_Mimon_trojan_61032
   network: ws
   password: '1234567890'
   port: 443
@@ -367,7 +367,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Germany_None_trojan_71033
+- name: Germany_None_trojan_61033
   network: ws
   password: '1234567890'
   port: 443
@@ -380,7 +380,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Germany_Frankfurt am Main_trojan_71034
+- name: Germany_Frankfurt am Main_trojan_61034
   network: ws
   password: '1234567890'
   port: 443
@@ -393,7 +393,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Germany_Frankfurt am Main_trojan_71035
+- name: Germany_Frankfurt am Main_trojan_61035
   network: ws
   password: '1234567890'
   port: 443
@@ -406,7 +406,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Germany_Nuremberg_trojan_71036
+- name: Germany_Nuremberg_trojan_61036
   network: ws
   password: '1234567890'
   port: 443
@@ -419,7 +419,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Denmark_None_trojan_71037
+- name: Denmark_None_trojan_61037
   network: ws
   password: '1234567890'
   port: 443
@@ -432,7 +432,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Russia_None_trojan_71038
+- name: Russia_None_trojan_61038
   network: ws
   password: '1234567890'
   port: 443
@@ -445,7 +445,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United Kingdom_Battersea_trojan_71039
+- name: United Kingdom_Battersea_trojan_61039
   network: ws
   password: '1234567890'
   port: 443
@@ -458,7 +458,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United Kingdom_Canterbury_trojan_71040
+- name: United Kingdom_Canterbury_trojan_61040
   network: ws
   password: '1234567890'
   port: 443
@@ -471,7 +471,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United Kingdom_Cornwall_trojan_71041
+- name: United Kingdom_Cornwall_trojan_61041
   network: ws
   password: '1234567890'
   port: 8443
@@ -484,7 +484,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United Kingdom_None_trojan_71042
+- name: United Kingdom_None_trojan_61042
   network: ws
   password: '1234567890'
   port: 443
@@ -497,7 +497,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United Kingdom_Dagenham_trojan_71043
+- name: United Kingdom_Dagenham_trojan_61043
   network: ws
   password: '1234567890'
   port: 443
@@ -510,7 +510,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United Kingdom_None_trojan_71044
+- name: United Kingdom_None_trojan_61044
   network: ws
   password: '1234567890'
   port: 8443
@@ -523,7 +523,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Iraq_None_trojan_71045
+- name: Iraq_None_trojan_61045
   network: ws
   password: '1234567890'
   port: 443
@@ -536,7 +536,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Iran_None_trojan_71046
+- name: Iran_None_trojan_61046
   network: ws
   password: '1234567890'
   port: 443
@@ -549,7 +549,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Iran_None_trojan_71047
+- name: Iran_None_trojan_61047
   network: ws
   password: '1234567890'
   port: 443
@@ -562,7 +562,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Lebanon_None_trojan_71048
+- name: Lebanon_None_trojan_61048
   network: ws
   password: '1234567890'
   port: 2053
@@ -575,7 +575,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Russia_Krasnogorsk_trojan_71049
+- name: Russia_Krasnogorsk_trojan_61049
   network: ws
   password: '1234567890'
   port: 2053
@@ -588,7 +588,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Seychelles_None_trojan_71050
+- name: Seychelles_None_trojan_61050
   network: ws
   password: '1234567890'
   port: 443
@@ -601,7 +601,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Türkiye_Izmir_trojan_71051
+- name: Türkiye_Izmir_trojan_61051
   network: ws
   password: '1234567890'
   port: 443
@@ -614,7 +614,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Germany_None_trojan_71052
+- name: Germany_None_trojan_61052
   network: ws
   password: '1234567890'
   port: 443
@@ -627,7 +627,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Germany_None_trojan_71053
+- name: Germany_None_trojan_61053
   network: ws
   password: '1234567890'
   port: 443
@@ -640,7 +640,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Germany_None_trojan_71054
+- name: Germany_None_trojan_61054
   network: ws
   password: '1234567890'
   port: 443
@@ -653,7 +653,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /
-- name: United States_New York_trojan_71055
+- name: United States_New York_trojan_61055
   network: ws
   password: '1234567890'
   port: 8443
@@ -666,7 +666,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_71056
+- name: United States_None_trojan_61056
   network: ws
   password: '1234567890'
   port: 443
@@ -679,7 +679,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_71057
+- name: United States_None_trojan_61057
   network: ws
   password: '1234567890'
   port: 443
@@ -692,7 +692,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_71058
+- name: United States_None_trojan_61058
   network: ws
   password: '1234567890'
   port: 443
@@ -705,7 +705,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_71059
+- name: United States_None_trojan_61059
   network: ws
   password: '1234567890'
   port: 443
@@ -718,7 +718,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_71060
+- name: United States_None_trojan_61060
   network: ws
   password: '1234567890'
   port: 443
@@ -731,7 +731,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_71061
+- name: United States_None_trojan_61061
   network: ws
   password: '1234567890'
   port: 443
@@ -744,7 +744,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /
-- name: United States_None_trojan_71062
+- name: United States_None_trojan_61062
   network: ws
   password: '1234567890'
   port: 443
@@ -757,7 +757,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /
-- name: United States_None_trojan_71063
+- name: United States_None_trojan_61063
   network: ws
   password: '1234567890'
   port: 443
@@ -770,7 +770,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_71064
+- name: United States_None_trojan_61064
   network: ws
   password: '1234567890'
   port: 443
@@ -783,7 +783,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_71065
+- name: United States_None_trojan_61065
   network: ws
   password: '1234567890'
   port: 443
@@ -796,7 +796,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_71066
+- name: United States_None_trojan_61066
   network: ws
   password: '1234567890'
   port: 443
@@ -809,7 +809,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_71067
+- name: United States_None_trojan_61067
   network: ws
   password: '1234567890'
   port: 8443
@@ -822,7 +822,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Unknown_trojan_71068
+- name: Unknown_trojan_61068
   network: ws
   password: '1234567890'
   port: 443
@@ -837,7 +837,7 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: Unknown_vmess_50111
+  name: Unknown_vmess_40111
   network: tcp
   port: '80'
   server: 127.0.0.53
@@ -846,7 +846,7 @@ proxies:
   uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
-  name: Unknown_vmess_50112
+  name: Unknown_vmess_40112
   network: tcp
   port: '81'
   server: 127.0.0.53
@@ -855,7 +855,7 @@ proxies:
   uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
-  name: Unknown_vmess_50113
+  name: Unknown_vmess_40113
   network: tcp
   port: '82'
   server: 127.0.0.53
@@ -864,7 +864,7 @@ proxies:
   uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
-  name: Unknown_vmess_50114
+  name: Unknown_vmess_40114
   network: tcp
   port: '83'
   server: 127.0.0.53
@@ -873,7 +873,7 @@ proxies:
   uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
-  name: Unknown_vmess_50115
+  name: Unknown_vmess_40115
   network: tcp
   port: '84'
   server: 127.0.0.53
@@ -882,7 +882,7 @@ proxies:
   uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
-  name: Unknown_vmess_50116
+  name: Unknown_vmess_40116
   network: tcp
   port: '85'
   server: 127.0.0.53
@@ -891,7 +891,7 @@ proxies:
   uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
-  name: Unknown_vmess_50117
+  name: Unknown_vmess_40117
   network: tcp
   port: '86'
   server: 127.0.0.53
@@ -900,7 +900,7 @@ proxies:
   uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
-  name: Unknown_vmess_50118
+  name: Unknown_vmess_40118
   network: tcp
   port: '87'
   server: 127.0.0.53
@@ -909,7 +909,7 @@ proxies:
   uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
-  name: Unknown_vmess_50119
+  name: Unknown_vmess_40119
   network: tcp
   port: '88'
   server: 127.0.0.53
@@ -918,7 +918,7 @@ proxies:
   uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
-  name: Unknown_vmess_501110
+  name: Unknown_vmess_401110
   network: tcp
   port: '89'
   server: 127.0.0.53
@@ -926,21 +926,21 @@ proxies:
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
 - cipher: aes-256-cfb
-  name: United States_None_ss_501111
+  name: United States_None_ss_401111
   password: amazonskr05
   port: 443
   server: 63.180.254.10
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Tuen Mun_vmess_501112
+  name: Hong Kong_Tuen Mun_vmess_401112
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: Hong Kong_None_trojan_501113
+- name: Hong Kong_None_trojan_401113
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 52687
@@ -948,7 +948,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Japan_Tokyo_trojan_501114
+- name: Japan_Tokyo_trojan_401114
   network: tcp
   password: BxceQaOe
   port: 5823
@@ -956,7 +956,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: Hong Kong_None_trojan_501115
+- name: Hong Kong_None_trojan_401115
   network: tcp
   password: BxceQaOe
   port: 22075
@@ -964,7 +964,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: Japan_Tokyo_trojan_501116
+- name: Japan_Tokyo_trojan_401116
   network: tcp
   password: BxceQaOe
   port: 3022
@@ -972,7 +972,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: Poland_None_trojan_501117
+- name: Poland_None_trojan_401117
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 4937
@@ -980,7 +980,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Japan_Tokyo_trojan_501118
+- name: Japan_Tokyo_trojan_401118
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 2001
@@ -988,7 +988,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: United States_San Jose_trojan_501119
+- name: United States_San Jose_trojan_401119
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 32876
@@ -996,7 +996,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Japan_Tokyo_trojan_501120
+- name: Japan_Tokyo_trojan_401120
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 32876
@@ -1004,7 +1004,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Hong Kong_None_trojan_501121
+- name: Hong Kong_None_trojan_401121
   network: tcp
   password: BxceQaOe
   port: 25675
@@ -1012,7 +1012,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: Japan_Tokyo_trojan_501122
+- name: Japan_Tokyo_trojan_401122
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 4019
@@ -1020,7 +1020,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Japan_Tokyo_trojan_501123
+- name: Japan_Tokyo_trojan_401123
   network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 3057
@@ -1028,7 +1028,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Hong Kong_None_trojan_501124
+- name: Hong Kong_None_trojan_401124
   network: tcp
   password: BxceQaOe
   port: 23255
@@ -1038,7 +1038,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Tuen Mun_vmess_501125
+  name: Hong Kong_Tuen Mun_vmess_401125
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -1046,7 +1046,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: Austria_None_trojan_501126
+- name: Austria_None_trojan_401126
   network: ws
   password: '1234567890'
   port: 443
@@ -1059,7 +1059,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /
-- name: Austria_None_trojan_501127
+- name: Austria_None_trojan_401127
   network: ws
   password: '1234567890'
   port: 443
@@ -1072,7 +1072,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Bulgaria_None_trojan_501128
+- name: Bulgaria_None_trojan_401128
   network: ws
   password: '1234567890'
   port: 443
@@ -1085,7 +1085,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Bulgaria_None_trojan_501129
+- name: Bulgaria_None_trojan_401129
   network: ws
   password: '1234567890'
   port: 443
@@ -1098,7 +1098,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Lithuania_Vilnius_trojan_501130
+- name: Lithuania_Vilnius_trojan_401130
   network: ws
   password: '1234567890'
   port: 443
@@ -1111,7 +1111,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Poland_Warsaw_trojan_501131
+- name: Poland_Warsaw_trojan_401131
   network: ws
   password: '1234567890'
   port: 443
@@ -1124,7 +1124,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Lithuania_Vilnius_trojan_501132
+- name: Lithuania_Vilnius_trojan_401132
   network: ws
   password: '1234567890'
   port: 443
@@ -1137,7 +1137,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Poland_Warsaw_trojan_501133
+- name: Poland_Warsaw_trojan_401133
   network: ws
   password: '1234567890'
   port: 443
@@ -1150,7 +1150,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /
-- name: Poland_Warsaw_trojan_501134
+- name: Poland_Warsaw_trojan_401134
   network: ws
   password: '1234567890'
   port: 443
@@ -1163,7 +1163,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Moldova_Chisinau_trojan_501135
+- name: Moldova_Chisinau_trojan_401135
   network: ws
   password: '1234567890'
   port: 8443
@@ -1176,7 +1176,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Lithuania_Vilnius_trojan_501136
+- name: Lithuania_Vilnius_trojan_401136
   network: ws
   password: '1234567890'
   port: 443
@@ -1189,7 +1189,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Lithuania_Vilnius_trojan_501137
+- name: Lithuania_Vilnius_trojan_401137
   network: ws
   password: '1234567890'
   port: 443
@@ -1202,7 +1202,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Israel_Jerusalem_trojan_501138
+- name: Israel_Jerusalem_trojan_401138
   network: ws
   password: '1234567890'
   port: 443
@@ -1215,7 +1215,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /
-- name: Canada_Ottawa_trojan_501139
+- name: Canada_Ottawa_trojan_401139
   network: ws
   password: '1234567890'
   port: 443
@@ -1228,7 +1228,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /
-- name: Czechia_Doksy_trojan_501140
+- name: Czechia_Doksy_trojan_401140
   network: ws
   password: '1234567890'
   port: 443
@@ -1241,7 +1241,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Czechia_Mimon_trojan_501141
+- name: Czechia_Mimon_trojan_401141
   network: ws
   password: '1234567890'
   port: 443
@@ -1254,7 +1254,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Czechia_Mimon_trojan_501142
+- name: Czechia_Mimon_trojan_401142
   network: ws
   password: '1234567890'
   port: 443
@@ -1267,7 +1267,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Germany_None_trojan_501143
+- name: Germany_None_trojan_401143
   network: ws
   password: '1234567890'
   port: 443
@@ -1280,7 +1280,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Germany_Frankfurt am Main_trojan_501144
+- name: Germany_Frankfurt am Main_trojan_401144
   network: ws
   password: '1234567890'
   port: 443
@@ -1293,7 +1293,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Germany_Frankfurt am Main_trojan_501145
+- name: Germany_Frankfurt am Main_trojan_401145
   network: ws
   password: '1234567890'
   port: 443
@@ -1306,7 +1306,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Germany_Nuremberg_trojan_501146
+- name: Germany_Nuremberg_trojan_401146
   network: ws
   password: '1234567890'
   port: 443
@@ -1319,7 +1319,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Denmark_None_trojan_501147
+- name: Denmark_None_trojan_401147
   network: ws
   password: '1234567890'
   port: 443
@@ -1332,7 +1332,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Russia_None_trojan_501148
+- name: Russia_None_trojan_401148
   network: ws
   password: '1234567890'
   port: 443
@@ -1345,7 +1345,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United Kingdom_Battersea_trojan_501149
+- name: United Kingdom_Battersea_trojan_401149
   network: ws
   password: '1234567890'
   port: 443
@@ -1358,7 +1358,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United Kingdom_Canterbury_trojan_501150
+- name: United Kingdom_Canterbury_trojan_401150
   network: ws
   password: '1234567890'
   port: 443
@@ -1371,7 +1371,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United Kingdom_Cornwall_trojan_501151
+- name: United Kingdom_Cornwall_trojan_401151
   network: ws
   password: '1234567890'
   port: 8443
@@ -1384,7 +1384,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United Kingdom_None_trojan_501152
+- name: United Kingdom_None_trojan_401152
   network: ws
   password: '1234567890'
   port: 443
@@ -1397,7 +1397,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United Kingdom_Dagenham_trojan_501153
+- name: United Kingdom_Dagenham_trojan_401153
   network: ws
   password: '1234567890'
   port: 443
@@ -1410,7 +1410,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United Kingdom_None_trojan_501154
+- name: United Kingdom_None_trojan_401154
   network: ws
   password: '1234567890'
   port: 8443
@@ -1423,7 +1423,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Iraq_None_trojan_501155
+- name: Iraq_None_trojan_401155
   network: ws
   password: '1234567890'
   port: 443
@@ -1436,7 +1436,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Iran_None_trojan_501156
+- name: Iran_None_trojan_401156
   network: ws
   password: '1234567890'
   port: 443
@@ -1449,7 +1449,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Iran_None_trojan_501157
+- name: Iran_None_trojan_401157
   network: ws
   password: '1234567890'
   port: 443
@@ -1462,7 +1462,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Lebanon_None_trojan_501158
+- name: Lebanon_None_trojan_401158
   network: ws
   password: '1234567890'
   port: 2053
@@ -1475,7 +1475,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Russia_Krasnogorsk_trojan_501159
+- name: Russia_Krasnogorsk_trojan_401159
   network: ws
   password: '1234567890'
   port: 2053
@@ -1488,7 +1488,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Seychelles_None_trojan_501160
+- name: Seychelles_None_trojan_401160
   network: ws
   password: '1234567890'
   port: 443
@@ -1501,7 +1501,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Türkiye_Izmir_trojan_501161
+- name: Türkiye_Izmir_trojan_401161
   network: ws
   password: '1234567890'
   port: 443
@@ -1514,7 +1514,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Germany_None_trojan_501162
+- name: Germany_None_trojan_401162
   network: ws
   password: '1234567890'
   port: 443
@@ -1527,7 +1527,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Germany_None_trojan_501163
+- name: Germany_None_trojan_401163
   network: ws
   password: '1234567890'
   port: 443
@@ -1540,7 +1540,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Germany_None_trojan_501164
+- name: Germany_None_trojan_401164
   network: ws
   password: '1234567890'
   port: 443
@@ -1553,7 +1553,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /
-- name: United States_New York_trojan_501165
+- name: United States_New York_trojan_401165
   network: ws
   password: '1234567890'
   port: 8443
@@ -1566,7 +1566,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_501166
+- name: United States_None_trojan_401166
   network: ws
   password: '1234567890'
   port: 443
@@ -1579,7 +1579,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_501167
+- name: United States_None_trojan_401167
   network: ws
   password: '1234567890'
   port: 443
@@ -1592,7 +1592,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_501168
+- name: United States_None_trojan_401168
   network: ws
   password: '1234567890'
   port: 443
@@ -1605,7 +1605,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_501169
+- name: United States_None_trojan_401169
   network: ws
   password: '1234567890'
   port: 443
@@ -1618,7 +1618,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_501170
+- name: United States_None_trojan_401170
   network: ws
   password: '1234567890'
   port: 443
@@ -1631,7 +1631,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_501171
+- name: United States_None_trojan_401171
   network: ws
   password: '1234567890'
   port: 443
@@ -1644,7 +1644,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /
-- name: United States_None_trojan_501172
+- name: United States_None_trojan_401172
   network: ws
   password: '1234567890'
   port: 443
@@ -1657,7 +1657,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /
-- name: United States_None_trojan_501173
+- name: United States_None_trojan_401173
   network: ws
   password: '1234567890'
   port: 443
@@ -1670,7 +1670,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_501174
+- name: United States_None_trojan_401174
   network: ws
   password: '1234567890'
   port: 443
@@ -1683,7 +1683,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_501175
+- name: United States_None_trojan_401175
   network: ws
   password: '1234567890'
   port: 443
@@ -1696,7 +1696,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_501176
+- name: United States_None_trojan_401176
   network: ws
   password: '1234567890'
   port: 443
@@ -1709,7 +1709,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: United States_None_trojan_501177
+- name: United States_None_trojan_401177
   network: ws
   password: '1234567890'
   port: 8443
@@ -1722,7 +1722,7 @@ proxies:
     headers:
       Host: kfm-bn0.pages.dev
     path: /?ed=2560
-- name: Unknown_trojan_501178
+- name: Unknown_trojan_401178
   network: ws
   password: '1234567890'
   port: 443
@@ -1741,304 +1741,304 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - United States_None_ss_7101
-  - Hong Kong_Tuen Mun_vmess_7102
-  - Japan_Tokyo_trojan_7103
-  - Japan_Tokyo_trojan_7104
-  - Hong Kong_None_trojan_7105
-  - Japan_Tokyo_trojan_7106
-  - Japan_Tokyo_trojan_7107
-  - Hong Kong_None_trojan_7108
-  - Japan_Tokyo_trojan_7109
-  - Japan_Tokyo_trojan_71010
-  - Hong Kong_None_trojan_71011
-  - Japan_Tokyo_trojan_71012
-  - Hong Kong_None_trojan_71013
-  - Japan_Tokyo_trojan_71014
-  - Hong Kong_Tuen Mun_vmess_71015
-  - Austria_None_trojan_71016
-  - Austria_None_trojan_71017
-  - Bulgaria_None_trojan_71018
-  - Bulgaria_None_trojan_71019
-  - Lithuania_Vilnius_trojan_71020
-  - Poland_Warsaw_trojan_71021
-  - Lithuania_Vilnius_trojan_71022
-  - Poland_Warsaw_trojan_71023
-  - Poland_Warsaw_trojan_71024
-  - Moldova_Chisinau_trojan_71025
-  - Lithuania_Vilnius_trojan_71026
-  - Lithuania_Vilnius_trojan_71027
-  - Israel_Jerusalem_trojan_71028
-  - Canada_Ottawa_trojan_71029
-  - Czechia_Doksy_trojan_71030
-  - Czechia_Mimon_trojan_71031
-  - Czechia_Mimon_trojan_71032
-  - Germany_None_trojan_71033
-  - Germany_Frankfurt am Main_trojan_71034
-  - Germany_Frankfurt am Main_trojan_71035
-  - Germany_Nuremberg_trojan_71036
-  - Denmark_None_trojan_71037
-  - Russia_None_trojan_71038
-  - United Kingdom_Battersea_trojan_71039
-  - United Kingdom_Canterbury_trojan_71040
-  - United Kingdom_Cornwall_trojan_71041
-  - United Kingdom_None_trojan_71042
-  - United Kingdom_Dagenham_trojan_71043
-  - United Kingdom_None_trojan_71044
-  - Iraq_None_trojan_71045
-  - Iran_None_trojan_71046
-  - Iran_None_trojan_71047
-  - Lebanon_None_trojan_71048
-  - Russia_Krasnogorsk_trojan_71049
-  - Seychelles_None_trojan_71050
-  - Türkiye_Izmir_trojan_71051
-  - Germany_None_trojan_71052
-  - Germany_None_trojan_71053
-  - Germany_None_trojan_71054
-  - United States_New York_trojan_71055
-  - United States_None_trojan_71056
-  - United States_None_trojan_71057
-  - United States_None_trojan_71058
-  - United States_None_trojan_71059
-  - United States_None_trojan_71060
-  - United States_None_trojan_71061
-  - United States_None_trojan_71062
-  - United States_None_trojan_71063
-  - United States_None_trojan_71064
-  - United States_None_trojan_71065
-  - United States_None_trojan_71066
-  - United States_None_trojan_71067
-  - Unknown_trojan_71068
-  - Unknown_vmess_50111
-  - Unknown_vmess_50112
-  - Unknown_vmess_50113
-  - Unknown_vmess_50114
-  - Unknown_vmess_50115
-  - Unknown_vmess_50116
-  - Unknown_vmess_50117
-  - Unknown_vmess_50118
-  - Unknown_vmess_50119
-  - Unknown_vmess_501110
-  - United States_None_ss_501111
-  - Hong Kong_Tuen Mun_vmess_501112
-  - Hong Kong_None_trojan_501113
-  - Japan_Tokyo_trojan_501114
-  - Hong Kong_None_trojan_501115
-  - Japan_Tokyo_trojan_501116
-  - Poland_None_trojan_501117
-  - Japan_Tokyo_trojan_501118
-  - United States_San Jose_trojan_501119
-  - Japan_Tokyo_trojan_501120
-  - Hong Kong_None_trojan_501121
-  - Japan_Tokyo_trojan_501122
-  - Japan_Tokyo_trojan_501123
-  - Hong Kong_None_trojan_501124
-  - Hong Kong_Tuen Mun_vmess_501125
-  - Austria_None_trojan_501126
-  - Austria_None_trojan_501127
-  - Bulgaria_None_trojan_501128
-  - Bulgaria_None_trojan_501129
-  - Lithuania_Vilnius_trojan_501130
-  - Poland_Warsaw_trojan_501131
-  - Lithuania_Vilnius_trojan_501132
-  - Poland_Warsaw_trojan_501133
-  - Poland_Warsaw_trojan_501134
-  - Moldova_Chisinau_trojan_501135
-  - Lithuania_Vilnius_trojan_501136
-  - Lithuania_Vilnius_trojan_501137
-  - Israel_Jerusalem_trojan_501138
-  - Canada_Ottawa_trojan_501139
-  - Czechia_Doksy_trojan_501140
-  - Czechia_Mimon_trojan_501141
-  - Czechia_Mimon_trojan_501142
-  - Germany_None_trojan_501143
-  - Germany_Frankfurt am Main_trojan_501144
-  - Germany_Frankfurt am Main_trojan_501145
-  - Germany_Nuremberg_trojan_501146
-  - Denmark_None_trojan_501147
-  - Russia_None_trojan_501148
-  - United Kingdom_Battersea_trojan_501149
-  - United Kingdom_Canterbury_trojan_501150
-  - United Kingdom_Cornwall_trojan_501151
-  - United Kingdom_None_trojan_501152
-  - United Kingdom_Dagenham_trojan_501153
-  - United Kingdom_None_trojan_501154
-  - Iraq_None_trojan_501155
-  - Iran_None_trojan_501156
-  - Iran_None_trojan_501157
-  - Lebanon_None_trojan_501158
-  - Russia_Krasnogorsk_trojan_501159
-  - Seychelles_None_trojan_501160
-  - Türkiye_Izmir_trojan_501161
-  - Germany_None_trojan_501162
-  - Germany_None_trojan_501163
-  - Germany_None_trojan_501164
-  - United States_New York_trojan_501165
-  - United States_None_trojan_501166
-  - United States_None_trojan_501167
-  - United States_None_trojan_501168
-  - United States_None_trojan_501169
-  - United States_None_trojan_501170
-  - United States_None_trojan_501171
-  - United States_None_trojan_501172
-  - United States_None_trojan_501173
-  - United States_None_trojan_501174
-  - United States_None_trojan_501175
-  - United States_None_trojan_501176
-  - United States_None_trojan_501177
-  - Unknown_trojan_501178
+  - United States_None_ss_6101
+  - Hong Kong_Tuen Mun_vmess_6102
+  - Hong Kong_None_trojan_6103
+  - Japan_Tokyo_trojan_6104
+  - Hong Kong_None_trojan_6105
+  - Japan_Tokyo_trojan_6106
+  - Poland_None_trojan_6107
+  - Japan_Tokyo_trojan_6108
+  - United States_San Jose_trojan_6109
+  - Japan_Tokyo_trojan_61010
+  - Hong Kong_None_trojan_61011
+  - Japan_Tokyo_trojan_61012
+  - Japan_Tokyo_trojan_61013
+  - Hong Kong_None_trojan_61014
+  - Hong Kong_Tuen Mun_vmess_61015
+  - Austria_None_trojan_61016
+  - Austria_None_trojan_61017
+  - Bulgaria_None_trojan_61018
+  - Bulgaria_None_trojan_61019
+  - Lithuania_Vilnius_trojan_61020
+  - Poland_Warsaw_trojan_61021
+  - Lithuania_Vilnius_trojan_61022
+  - Poland_Warsaw_trojan_61023
+  - Poland_Warsaw_trojan_61024
+  - Moldova_Chisinau_trojan_61025
+  - Lithuania_Vilnius_trojan_61026
+  - Lithuania_Vilnius_trojan_61027
+  - Israel_Jerusalem_trojan_61028
+  - Canada_Ottawa_trojan_61029
+  - Czechia_Doksy_trojan_61030
+  - Czechia_Mimon_trojan_61031
+  - Czechia_Mimon_trojan_61032
+  - Germany_None_trojan_61033
+  - Germany_Frankfurt am Main_trojan_61034
+  - Germany_Frankfurt am Main_trojan_61035
+  - Germany_Nuremberg_trojan_61036
+  - Denmark_None_trojan_61037
+  - Russia_None_trojan_61038
+  - United Kingdom_Battersea_trojan_61039
+  - United Kingdom_Canterbury_trojan_61040
+  - United Kingdom_Cornwall_trojan_61041
+  - United Kingdom_None_trojan_61042
+  - United Kingdom_Dagenham_trojan_61043
+  - United Kingdom_None_trojan_61044
+  - Iraq_None_trojan_61045
+  - Iran_None_trojan_61046
+  - Iran_None_trojan_61047
+  - Lebanon_None_trojan_61048
+  - Russia_Krasnogorsk_trojan_61049
+  - Seychelles_None_trojan_61050
+  - Türkiye_Izmir_trojan_61051
+  - Germany_None_trojan_61052
+  - Germany_None_trojan_61053
+  - Germany_None_trojan_61054
+  - United States_New York_trojan_61055
+  - United States_None_trojan_61056
+  - United States_None_trojan_61057
+  - United States_None_trojan_61058
+  - United States_None_trojan_61059
+  - United States_None_trojan_61060
+  - United States_None_trojan_61061
+  - United States_None_trojan_61062
+  - United States_None_trojan_61063
+  - United States_None_trojan_61064
+  - United States_None_trojan_61065
+  - United States_None_trojan_61066
+  - United States_None_trojan_61067
+  - Unknown_trojan_61068
+  - Unknown_vmess_40111
+  - Unknown_vmess_40112
+  - Unknown_vmess_40113
+  - Unknown_vmess_40114
+  - Unknown_vmess_40115
+  - Unknown_vmess_40116
+  - Unknown_vmess_40117
+  - Unknown_vmess_40118
+  - Unknown_vmess_40119
+  - Unknown_vmess_401110
+  - United States_None_ss_401111
+  - Hong Kong_Tuen Mun_vmess_401112
+  - Hong Kong_None_trojan_401113
+  - Japan_Tokyo_trojan_401114
+  - Hong Kong_None_trojan_401115
+  - Japan_Tokyo_trojan_401116
+  - Poland_None_trojan_401117
+  - Japan_Tokyo_trojan_401118
+  - United States_San Jose_trojan_401119
+  - Japan_Tokyo_trojan_401120
+  - Hong Kong_None_trojan_401121
+  - Japan_Tokyo_trojan_401122
+  - Japan_Tokyo_trojan_401123
+  - Hong Kong_None_trojan_401124
+  - Hong Kong_Tuen Mun_vmess_401125
+  - Austria_None_trojan_401126
+  - Austria_None_trojan_401127
+  - Bulgaria_None_trojan_401128
+  - Bulgaria_None_trojan_401129
+  - Lithuania_Vilnius_trojan_401130
+  - Poland_Warsaw_trojan_401131
+  - Lithuania_Vilnius_trojan_401132
+  - Poland_Warsaw_trojan_401133
+  - Poland_Warsaw_trojan_401134
+  - Moldova_Chisinau_trojan_401135
+  - Lithuania_Vilnius_trojan_401136
+  - Lithuania_Vilnius_trojan_401137
+  - Israel_Jerusalem_trojan_401138
+  - Canada_Ottawa_trojan_401139
+  - Czechia_Doksy_trojan_401140
+  - Czechia_Mimon_trojan_401141
+  - Czechia_Mimon_trojan_401142
+  - Germany_None_trojan_401143
+  - Germany_Frankfurt am Main_trojan_401144
+  - Germany_Frankfurt am Main_trojan_401145
+  - Germany_Nuremberg_trojan_401146
+  - Denmark_None_trojan_401147
+  - Russia_None_trojan_401148
+  - United Kingdom_Battersea_trojan_401149
+  - United Kingdom_Canterbury_trojan_401150
+  - United Kingdom_Cornwall_trojan_401151
+  - United Kingdom_None_trojan_401152
+  - United Kingdom_Dagenham_trojan_401153
+  - United Kingdom_None_trojan_401154
+  - Iraq_None_trojan_401155
+  - Iran_None_trojan_401156
+  - Iran_None_trojan_401157
+  - Lebanon_None_trojan_401158
+  - Russia_Krasnogorsk_trojan_401159
+  - Seychelles_None_trojan_401160
+  - Türkiye_Izmir_trojan_401161
+  - Germany_None_trojan_401162
+  - Germany_None_trojan_401163
+  - Germany_None_trojan_401164
+  - United States_New York_trojan_401165
+  - United States_None_trojan_401166
+  - United States_None_trojan_401167
+  - United States_None_trojan_401168
+  - United States_None_trojan_401169
+  - United States_None_trojan_401170
+  - United States_None_trojan_401171
+  - United States_None_trojan_401172
+  - United States_None_trojan_401173
+  - United States_None_trojan_401174
+  - United States_None_trojan_401175
+  - United States_None_trojan_401176
+  - United States_None_trojan_401177
+  - Unknown_trojan_401178
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - United States_None_ss_7101
-  - Hong Kong_Tuen Mun_vmess_7102
-  - Japan_Tokyo_trojan_7103
-  - Japan_Tokyo_trojan_7104
-  - Hong Kong_None_trojan_7105
-  - Japan_Tokyo_trojan_7106
-  - Japan_Tokyo_trojan_7107
-  - Hong Kong_None_trojan_7108
-  - Japan_Tokyo_trojan_7109
-  - Japan_Tokyo_trojan_71010
-  - Hong Kong_None_trojan_71011
-  - Japan_Tokyo_trojan_71012
-  - Hong Kong_None_trojan_71013
-  - Japan_Tokyo_trojan_71014
-  - Hong Kong_Tuen Mun_vmess_71015
-  - Austria_None_trojan_71016
-  - Austria_None_trojan_71017
-  - Bulgaria_None_trojan_71018
-  - Bulgaria_None_trojan_71019
-  - Lithuania_Vilnius_trojan_71020
-  - Poland_Warsaw_trojan_71021
-  - Lithuania_Vilnius_trojan_71022
-  - Poland_Warsaw_trojan_71023
-  - Poland_Warsaw_trojan_71024
-  - Moldova_Chisinau_trojan_71025
-  - Lithuania_Vilnius_trojan_71026
-  - Lithuania_Vilnius_trojan_71027
-  - Israel_Jerusalem_trojan_71028
-  - Canada_Ottawa_trojan_71029
-  - Czechia_Doksy_trojan_71030
-  - Czechia_Mimon_trojan_71031
-  - Czechia_Mimon_trojan_71032
-  - Germany_None_trojan_71033
-  - Germany_Frankfurt am Main_trojan_71034
-  - Germany_Frankfurt am Main_trojan_71035
-  - Germany_Nuremberg_trojan_71036
-  - Denmark_None_trojan_71037
-  - Russia_None_trojan_71038
-  - United Kingdom_Battersea_trojan_71039
-  - United Kingdom_Canterbury_trojan_71040
-  - United Kingdom_Cornwall_trojan_71041
-  - United Kingdom_None_trojan_71042
-  - United Kingdom_Dagenham_trojan_71043
-  - United Kingdom_None_trojan_71044
-  - Iraq_None_trojan_71045
-  - Iran_None_trojan_71046
-  - Iran_None_trojan_71047
-  - Lebanon_None_trojan_71048
-  - Russia_Krasnogorsk_trojan_71049
-  - Seychelles_None_trojan_71050
-  - Türkiye_Izmir_trojan_71051
-  - Germany_None_trojan_71052
-  - Germany_None_trojan_71053
-  - Germany_None_trojan_71054
-  - United States_New York_trojan_71055
-  - United States_None_trojan_71056
-  - United States_None_trojan_71057
-  - United States_None_trojan_71058
-  - United States_None_trojan_71059
-  - United States_None_trojan_71060
-  - United States_None_trojan_71061
-  - United States_None_trojan_71062
-  - United States_None_trojan_71063
-  - United States_None_trojan_71064
-  - United States_None_trojan_71065
-  - United States_None_trojan_71066
-  - United States_None_trojan_71067
-  - Unknown_trojan_71068
-  - Unknown_vmess_50111
-  - Unknown_vmess_50112
-  - Unknown_vmess_50113
-  - Unknown_vmess_50114
-  - Unknown_vmess_50115
-  - Unknown_vmess_50116
-  - Unknown_vmess_50117
-  - Unknown_vmess_50118
-  - Unknown_vmess_50119
-  - Unknown_vmess_501110
-  - United States_None_ss_501111
-  - Hong Kong_Tuen Mun_vmess_501112
-  - Hong Kong_None_trojan_501113
-  - Japan_Tokyo_trojan_501114
-  - Hong Kong_None_trojan_501115
-  - Japan_Tokyo_trojan_501116
-  - Poland_None_trojan_501117
-  - Japan_Tokyo_trojan_501118
-  - United States_San Jose_trojan_501119
-  - Japan_Tokyo_trojan_501120
-  - Hong Kong_None_trojan_501121
-  - Japan_Tokyo_trojan_501122
-  - Japan_Tokyo_trojan_501123
-  - Hong Kong_None_trojan_501124
-  - Hong Kong_Tuen Mun_vmess_501125
-  - Austria_None_trojan_501126
-  - Austria_None_trojan_501127
-  - Bulgaria_None_trojan_501128
-  - Bulgaria_None_trojan_501129
-  - Lithuania_Vilnius_trojan_501130
-  - Poland_Warsaw_trojan_501131
-  - Lithuania_Vilnius_trojan_501132
-  - Poland_Warsaw_trojan_501133
-  - Poland_Warsaw_trojan_501134
-  - Moldova_Chisinau_trojan_501135
-  - Lithuania_Vilnius_trojan_501136
-  - Lithuania_Vilnius_trojan_501137
-  - Israel_Jerusalem_trojan_501138
-  - Canada_Ottawa_trojan_501139
-  - Czechia_Doksy_trojan_501140
-  - Czechia_Mimon_trojan_501141
-  - Czechia_Mimon_trojan_501142
-  - Germany_None_trojan_501143
-  - Germany_Frankfurt am Main_trojan_501144
-  - Germany_Frankfurt am Main_trojan_501145
-  - Germany_Nuremberg_trojan_501146
-  - Denmark_None_trojan_501147
-  - Russia_None_trojan_501148
-  - United Kingdom_Battersea_trojan_501149
-  - United Kingdom_Canterbury_trojan_501150
-  - United Kingdom_Cornwall_trojan_501151
-  - United Kingdom_None_trojan_501152
-  - United Kingdom_Dagenham_trojan_501153
-  - United Kingdom_None_trojan_501154
-  - Iraq_None_trojan_501155
-  - Iran_None_trojan_501156
-  - Iran_None_trojan_501157
-  - Lebanon_None_trojan_501158
-  - Russia_Krasnogorsk_trojan_501159
-  - Seychelles_None_trojan_501160
-  - Türkiye_Izmir_trojan_501161
-  - Germany_None_trojan_501162
-  - Germany_None_trojan_501163
-  - Germany_None_trojan_501164
-  - United States_New York_trojan_501165
-  - United States_None_trojan_501166
-  - United States_None_trojan_501167
-  - United States_None_trojan_501168
-  - United States_None_trojan_501169
-  - United States_None_trojan_501170
-  - United States_None_trojan_501171
-  - United States_None_trojan_501172
-  - United States_None_trojan_501173
-  - United States_None_trojan_501174
-  - United States_None_trojan_501175
-  - United States_None_trojan_501176
-  - United States_None_trojan_501177
-  - Unknown_trojan_501178
+  - United States_None_ss_6101
+  - Hong Kong_Tuen Mun_vmess_6102
+  - Hong Kong_None_trojan_6103
+  - Japan_Tokyo_trojan_6104
+  - Hong Kong_None_trojan_6105
+  - Japan_Tokyo_trojan_6106
+  - Poland_None_trojan_6107
+  - Japan_Tokyo_trojan_6108
+  - United States_San Jose_trojan_6109
+  - Japan_Tokyo_trojan_61010
+  - Hong Kong_None_trojan_61011
+  - Japan_Tokyo_trojan_61012
+  - Japan_Tokyo_trojan_61013
+  - Hong Kong_None_trojan_61014
+  - Hong Kong_Tuen Mun_vmess_61015
+  - Austria_None_trojan_61016
+  - Austria_None_trojan_61017
+  - Bulgaria_None_trojan_61018
+  - Bulgaria_None_trojan_61019
+  - Lithuania_Vilnius_trojan_61020
+  - Poland_Warsaw_trojan_61021
+  - Lithuania_Vilnius_trojan_61022
+  - Poland_Warsaw_trojan_61023
+  - Poland_Warsaw_trojan_61024
+  - Moldova_Chisinau_trojan_61025
+  - Lithuania_Vilnius_trojan_61026
+  - Lithuania_Vilnius_trojan_61027
+  - Israel_Jerusalem_trojan_61028
+  - Canada_Ottawa_trojan_61029
+  - Czechia_Doksy_trojan_61030
+  - Czechia_Mimon_trojan_61031
+  - Czechia_Mimon_trojan_61032
+  - Germany_None_trojan_61033
+  - Germany_Frankfurt am Main_trojan_61034
+  - Germany_Frankfurt am Main_trojan_61035
+  - Germany_Nuremberg_trojan_61036
+  - Denmark_None_trojan_61037
+  - Russia_None_trojan_61038
+  - United Kingdom_Battersea_trojan_61039
+  - United Kingdom_Canterbury_trojan_61040
+  - United Kingdom_Cornwall_trojan_61041
+  - United Kingdom_None_trojan_61042
+  - United Kingdom_Dagenham_trojan_61043
+  - United Kingdom_None_trojan_61044
+  - Iraq_None_trojan_61045
+  - Iran_None_trojan_61046
+  - Iran_None_trojan_61047
+  - Lebanon_None_trojan_61048
+  - Russia_Krasnogorsk_trojan_61049
+  - Seychelles_None_trojan_61050
+  - Türkiye_Izmir_trojan_61051
+  - Germany_None_trojan_61052
+  - Germany_None_trojan_61053
+  - Germany_None_trojan_61054
+  - United States_New York_trojan_61055
+  - United States_None_trojan_61056
+  - United States_None_trojan_61057
+  - United States_None_trojan_61058
+  - United States_None_trojan_61059
+  - United States_None_trojan_61060
+  - United States_None_trojan_61061
+  - United States_None_trojan_61062
+  - United States_None_trojan_61063
+  - United States_None_trojan_61064
+  - United States_None_trojan_61065
+  - United States_None_trojan_61066
+  - United States_None_trojan_61067
+  - Unknown_trojan_61068
+  - Unknown_vmess_40111
+  - Unknown_vmess_40112
+  - Unknown_vmess_40113
+  - Unknown_vmess_40114
+  - Unknown_vmess_40115
+  - Unknown_vmess_40116
+  - Unknown_vmess_40117
+  - Unknown_vmess_40118
+  - Unknown_vmess_40119
+  - Unknown_vmess_401110
+  - United States_None_ss_401111
+  - Hong Kong_Tuen Mun_vmess_401112
+  - Hong Kong_None_trojan_401113
+  - Japan_Tokyo_trojan_401114
+  - Hong Kong_None_trojan_401115
+  - Japan_Tokyo_trojan_401116
+  - Poland_None_trojan_401117
+  - Japan_Tokyo_trojan_401118
+  - United States_San Jose_trojan_401119
+  - Japan_Tokyo_trojan_401120
+  - Hong Kong_None_trojan_401121
+  - Japan_Tokyo_trojan_401122
+  - Japan_Tokyo_trojan_401123
+  - Hong Kong_None_trojan_401124
+  - Hong Kong_Tuen Mun_vmess_401125
+  - Austria_None_trojan_401126
+  - Austria_None_trojan_401127
+  - Bulgaria_None_trojan_401128
+  - Bulgaria_None_trojan_401129
+  - Lithuania_Vilnius_trojan_401130
+  - Poland_Warsaw_trojan_401131
+  - Lithuania_Vilnius_trojan_401132
+  - Poland_Warsaw_trojan_401133
+  - Poland_Warsaw_trojan_401134
+  - Moldova_Chisinau_trojan_401135
+  - Lithuania_Vilnius_trojan_401136
+  - Lithuania_Vilnius_trojan_401137
+  - Israel_Jerusalem_trojan_401138
+  - Canada_Ottawa_trojan_401139
+  - Czechia_Doksy_trojan_401140
+  - Czechia_Mimon_trojan_401141
+  - Czechia_Mimon_trojan_401142
+  - Germany_None_trojan_401143
+  - Germany_Frankfurt am Main_trojan_401144
+  - Germany_Frankfurt am Main_trojan_401145
+  - Germany_Nuremberg_trojan_401146
+  - Denmark_None_trojan_401147
+  - Russia_None_trojan_401148
+  - United Kingdom_Battersea_trojan_401149
+  - United Kingdom_Canterbury_trojan_401150
+  - United Kingdom_Cornwall_trojan_401151
+  - United Kingdom_None_trojan_401152
+  - United Kingdom_Dagenham_trojan_401153
+  - United Kingdom_None_trojan_401154
+  - Iraq_None_trojan_401155
+  - Iran_None_trojan_401156
+  - Iran_None_trojan_401157
+  - Lebanon_None_trojan_401158
+  - Russia_Krasnogorsk_trojan_401159
+  - Seychelles_None_trojan_401160
+  - Türkiye_Izmir_trojan_401161
+  - Germany_None_trojan_401162
+  - Germany_None_trojan_401163
+  - Germany_None_trojan_401164
+  - United States_New York_trojan_401165
+  - United States_None_trojan_401166
+  - United States_None_trojan_401167
+  - United States_None_trojan_401168
+  - United States_None_trojan_401169
+  - United States_None_trojan_401170
+  - United States_None_trojan_401171
+  - United States_None_trojan_401172
+  - United States_None_trojan_401173
+  - United States_None_trojan_401174
+  - United States_None_trojan_401175
+  - United States_None_trojan_401176
+  - United States_None_trojan_401177
+  - Unknown_trojan_401178
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
